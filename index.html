@@ -7,10 +7,11 @@
 	<script type="text/javascript" src="data.js"></script>
 	
   	<script>
-	     var ptotal=0, e=0, rnum=0;
+	     var ptotal=0, e1=0, e2=0, rnum=0;
 		 
 		 ptotal=mywd.Sheet1.length;
-		 e = document.getElementById("shw"); 
+		 e1 = document.getElementById("shw1"); 
+		 e2 = document.getElementById("shw2"); 
 	    
           rnum= Math.floor(Math.random() * ptotal);     // if is 10, returns a random integer from 0 to 9 
 			//alert(mywd.Sheet1[0].Phrases);
@@ -24,7 +25,8 @@
 		       rnum= Math.floor(Math.random() * ptotal); ; 
 			   n=d.getTime();
 		       //e.innerHTML =mywd.Sheet1[rnum].Phrases;
-		       e.innerHTML =rnum;  
+		       e1.innerHTML =rnum;  
+			   e2.innerHTML =mywd.Sheet1[rnum].Phrases;
 		   }, 
 		   
 		   3000);
@@ -45,9 +47,10 @@
 	
     <h1></h1>
 	<br/>
-	<p id="shw" class="shw">zzz</p>
+	<p id="shw1" class="shw1">zzz</p>
 
 
+	<p id="shw2" class="shw2">yyy</p>
 
 
     </section>
