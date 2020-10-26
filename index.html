@@ -24,8 +24,8 @@
 	
     <h1></h1>
 	<br/>
-	<p id="shw1" >aaa</p>
-	<p id="shw2" >bbb</p>
+	<p id="shw1" >zzz</p>
+	<p id="shw2" >yyy</p>
     <input onclick="responsiveVoice.speak('This is the text you want to speak');" type='button' value='🔊 Play1' />
     <input onclick="gWdSpk();" type='button' value='🔊 Play2' />
 
@@ -67,10 +67,12 @@
 		 
 	  function gWdSpk(){
 		 var phtotal=mywd.Sheet1.length;
-		 //e1 = document.getElementById("shw1"); 
+		 e1 = document.getElementById("shw1"); 
 		 //e2 = document.getElementById("shw2"); 
 	    
           var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
+		  e1.innerHTML =mywd.Sheet1[radn].Phrases;
+		  
 		  var txt=mywd.Sheet1[radn].Phrases
 	      responsiveVoice.speak(txt);
 	  
