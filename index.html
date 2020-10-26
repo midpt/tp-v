@@ -5,8 +5,22 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="data.js"></script>
-		 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<script>
+	  function gWdSpk(){
+		 var phtotal=mywd.Sheet1.length;
+		 //e1 = document.getElementById("shw1"); 
+		 //e2 = document.getElementById("shw2"); 
+	    
+          var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
+		  var txt=mywd.Sheet1[radn].Phrases
+	      responsiveVoice.speak(txt);
+	  
+	  
+	  }
 	
+	
+	</script>
 
 	
 	
@@ -22,7 +36,8 @@
 	<br/>
 	<p id="shw1" >bb</p>
 	<p id="shw2" ></p>
-    <input onclick="responsiveVoice.speak('This is the text you want to speak');" type='button' value='🔊 Play' />
+    <input onclick="responsiveVoice.speak('This is the text you want to speak');" type='button' value='🔊 Play1' />
+    <input onclick="gWdSpk();" type='button' value='🔊 Play2' />
 
 
     </section>
