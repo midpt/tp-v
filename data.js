@@ -1,8 +1,6 @@
 mywd={
     "Sheet1": [
-        {
-            "Phrases": "神透过耶稣基督的生、死和复活，奠定了救赎万民的根基，但这救赎事件必须宣讲出来才能发挥效力。保罗特别强调宣讲神的道是必不可缺的。"
-        },
+
         {
             "Phrases": "Home church is a great accomplishment and the pinnacle of the Divine Principle."
         },
