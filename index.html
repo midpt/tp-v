@@ -48,15 +48,16 @@
 			  var n = 0	
 	
 	       ptotal=mywd.Sheet1.length;
-	       setInterval(function(){ 
+	    //   setInterval(function(){ 
 		   
 		       rnum= Math.floor(Math.random() * ptotal);  
-			   n=d.getTime();
+				var msg = new SpeechSynthesisUtterance(mywd.Sheet1[rnum].Phrases);
+				window.speechSynthesis.speak(msg);			   
 		       //e1.innerHTML =str1.concat(rnum.toString());  
 			   e1.innerHTML =mywd.Sheet1[rnum].Phrases;
-		   }, 
+		 //  }, 
 		   
-		   3000);
+		 //  3000);
 	
 	</script>
   
