@@ -5,6 +5,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="data.js"></script>
+		 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	
 
 	
@@ -21,6 +22,7 @@
 	<br/>
 	<p id="shw1" >bb</p>
 	<p id="shw2" ></p>
+    <input onclick="responsiveVoice.speak('This is the text you want to speak');" type='button' value='🔊 Play' />
 
 
     </section>
@@ -49,15 +51,17 @@
 	
 	       ptotal=mywd.Sheet1.length;
 	    //   setInterval(function(){ 
-		   
 		       rnum= Math.floor(Math.random() * ptotal);  
-				var msg = new SpeechSynthesisUtterance(mywd.Sheet1[rnum].Phrases);
-				window.speechSynthesis.speak(msg);			   
+				//var msg = new SpeechSynthesisUtterance(mywd.Sheet1[rnum].Phrases);
+				//window.speechSynthesis.speak(msg);			   
 		       //e1.innerHTML =str1.concat(rnum.toString());  
 			   e1.innerHTML =mywd.Sheet1[rnum].Phrases;
+			   
 		 //  }, 
-		   
 		 //  3000);
+		 
+
+ 		 
 	
 	</script>
   
