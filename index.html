@@ -5,6 +5,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="data.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	<script>
 
@@ -22,17 +23,16 @@
 
     <section class="main-content">
 	
-    <h2 style="text-align:left;">&#9776;</h2>
+    <h2 style="text-align:left;" onclick="MMenu();"  >&#9776;</h2>
 	
 	<br/>
+	
 	<p id="shw1" >Click the Play button</p>
 	<p id="shw2" ></p>
     <input onclick="gWdSpk();" type='button' value='🔊 Play' />
     <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
+    <p style="overflow:auto; width: 300px; id="wbox">sdfss</p>
 
-    <input onclick="" type='button' value='&#9776; Test' />
-    <input onclick="" type='button' value='&#9776; Test' />
-   <input onclick="" type='button' value='&#9776; Test' />
 
 	  	 
 	
@@ -70,6 +70,12 @@
 			   
 		 //  }, 
 		 //  3000);
+		 
+		 
+	  function MMenu()	 {
+	  
+	  
+	  }
 		 
 	  function gWdSpk(){
 		 var phtotal=mywd.Sheet1.length;
