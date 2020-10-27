@@ -109,15 +109,18 @@
 	    // var obj=document.getElementById("editTA");
 	     var taTxt=document.getElementById("editTA").value;
 		 
-		 var s = taTxt.split(/\r?\n/);
+		 //var s = taTxt.split(/\r?\n/);
+		 var s=taTxt.split(/(\n\r){2,}/g);
 		 var nump=s.length;
 		 alert(nump.toString());
 
 		 var txt=nump.toString();
-	     alert(txt.concat("1) ",s[0],"\n 2) ",s[1]));
+	     alert(txt.concat("1) ",s[0],"\n 2) ",s[1], "\n 3) ", s[2]));
        
 	  
-	  } 		 
+	  } 
+
+	  
 	
 	</script>
   
