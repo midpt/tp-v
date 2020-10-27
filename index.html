@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 	 .scrollabletextbox {
-		height:100px;
-		width:200px;
+		height:400px;
+		width:700px;
 		background: #fef9e7;
 		font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
 		font-size: 82%;
@@ -40,7 +40,8 @@
 	
 	<p id="shw1" >Click the Play button</p>
 	<p id="shw2" ></p>
-    <input onclick="gWdSpk();" type='button' value='🔊 Play' />
+    <input onclick="gWdSpk();" type='button' value='🔊 Play Embedded' />
+    <input onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
     <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
 	<br/>
 	<textarea class="scrollabletextbox" contenteditable="true" name="note" value="" id="editTA">
@@ -76,9 +77,6 @@
 		 e2 = document.getElementById("shw2"); 
 	    
           ;rnum= Math.floor(Math.random() * ptotal);     // if is 10, returns a random integer from 0 to 9 
-		
- 			  var d = new Date();
-			  var n = 0	
 	
 	       ptotal=mywd.Sheet1.length;
 	       rnum= Math.floor(Math.random() * ptotal);  
@@ -100,6 +98,27 @@
 	  
 	  
 	  }
+	  
+	  function pasteSpk(){
+	     var taTxt=document.getElementById("editTA").value;
+
+		 var s=taTxt.split(/\n\s*\n/); //detect empty line and split them into array
+		 
+		// var nump=s.length; // total paragraph
+	  
+		 var phtotal=s.length; // total paragraph
+		 e1 = document.getElementById("shw1"); 
+		 //e2 = document.getElementById("shw2"); 
+	    
+          var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
+		  e1.innerHTML =s[radn]
+		  
+		  var txt=s[radn];
+	      responsiveVoice.speak(txt);
+	  
+	  
+	  }
+	  
 	  function updateWdphrase(){
 	     var obj=document.getElementById("editp");
 	  
