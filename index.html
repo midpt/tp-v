@@ -111,12 +111,13 @@
 	     var taTxt=document.getElementById("editTA").value;
 		 
 		 //var s = taTxt.split(/\r?\n/);
-		 var s=taTxt.split(/\n\s*\n/);
-		 var nump=s.length;
-		 alert(nump.toString());
+		 var s=taTxt.split(/\n\s*\n/); //detect empty line and split them into array
+		 
+		 var nump=s.length; // total paragraph
+		// alert(nump.toString());
 
-		 var txt=nump.toString();
-	     alert(txt.concat("1) ",s[0],"\n 2) ",s[1], "\n 3) ", s[2]));
+		 var txt="Total paragraph="+nump.toString();
+	     alert(txt.concat("\n 1) ",s[0],"\n 2) ",s[1], "\n 3) ", s[2]));
        
 	  
 	  } 
