@@ -98,8 +98,16 @@
 	  
 	  }
 		
-
-		  
+      function contEmbedSpk(){
+	     gWdSpk();
+	  
+	  }
+	  function embedSpkEnd(em) {
+			//$("#log").text('fnished playing');
+			//alert('finished playing');
+			contEmbedSpk();
+			
+		  };		  
 		
 	  function gWdSpk(){
 		 //phtotal=mywd.Sheet1.length;
@@ -111,9 +119,9 @@
 		  e1.innerHTML =mywd.Sheet1[radn].Phrases;
 		  var txt=mywd.Sheet1[radn].Phrases
 	     // responsiveVoice.speak(txt);
-		  responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd(gWdSpk)});
-		  
-		  
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
+		  responsiveVoice.pause();
+          setInterval(function(){ responsiveVoice.resume(); }, 2000);
 	  }
 	  
 	  function pasteSpk(){
@@ -128,18 +136,13 @@
 		  e1.innerHTML =s[radn]
 		  var txt=s[radn];
 	     // responsiveVoice.speak(txt);
-		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd(pasteSpk)});
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd()});
 	  
 	  }
 	  
-	  function embedSpkEnd(f) {
-			//$("#log").text('fnished playing');
-			//alert('finished playing');
-			f();
-			
-		  };
-	  function pasteSpkEnd(f){
-	      f();
+
+	  function pasteSpkEnd(p){
+	      p();
 	  }	  
 	      
 
