@@ -97,9 +97,15 @@
 	  function MMenu()	 {
 	  
 	  }
-		     
+		
+		var embedSpkEnd = function () {
+			//$("#log").text('fnished playing');
+			//alert('finished playing');
+			gWdspk();
+		  };
+		
 	  function gWdSpk(){
-		 var phtotal=mywd.Sheet1.length;
+		 //phtotal=mywd.Sheet1.length;
 		 document.getElementById("spkStop").style.visibility = "visible";
 
 		 e1 = document.getElementById("shw1"); 
@@ -107,7 +113,10 @@
           var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 		  e1.innerHTML =mywd.Sheet1[radn].Phrases;
 		  var txt=mywd.Sheet1[radn].Phrases
-	      responsiveVoice.speak(txt);
+	     // responsiveVoice.speak(txt);
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
+		  
+		  
 	  }
 	  
 	  function pasteSpk(){
