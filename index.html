@@ -103,6 +103,10 @@
 			//alert('finished playing');
 			gWdspk();
 		  };
+	  var pasteSpkEnd=function(){
+	      pasteSpk();
+	  }
+		  
 		
 	  function gWdSpk(){
 		 //phtotal=mywd.Sheet1.length;
@@ -130,7 +134,8 @@
           var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 		  e1.innerHTML =s[radn]
 		  var txt=s[radn];
-	      responsiveVoice.speak(txt);
+	     // responsiveVoice.speak(txt);
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd});
 	  
 	  }
 	  
