@@ -33,7 +33,9 @@
     <input onclick="gWdSpk();" type='button' value='🔊 Play' />
     <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
 	
-    <p contenteditable="true" id="editp">Paste your Word-phrase here. Please separate each paragraph by a blank space.</p> 
+    <p contenteditable="true" id="editp" style="width: 550px;  overflow: auto;   background: #fef9e7;">
+	Paste your Word-phrase here. Please separate each paragraph by a blank space.
+	</p> 
 
     <input onclick="updateWdphrase();" type='button' value='🔊 Update data' />
 
@@ -60,15 +62,8 @@
 			  var n = 0	
 	
 	       ptotal=mywd.Sheet1.length;
-	    //   setInterval(function(){ 
-		       rnum= Math.floor(Math.random() * ptotal);  
-				//var msg = new SpeechSynthesisUtterance(mywd.Sheet1[rnum].Phrases);
-				//window.speechSynthesis.speak(msg);			   
-		       //e1.innerHTML =str1.concat(rnum.toString());  
-			  // e1.innerHTML =mywd.Sheet1[rnum].Phrases;
-			   
-		 //  }, 
-		 //  3000);
+	       rnum= Math.floor(Math.random() * ptotal);  
+
 		 
 		 
 	  function MMenu()	 {
