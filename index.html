@@ -23,11 +23,18 @@
 	  //---not used
 	  document.execCommand("defaultParagraphSeparator", false, "br");
 	  $(document).ready(function() {
+	    document.getElementById("playpasted").style.visibility = "hidden"; 
+		document.getElementById("spkStop").style.visibility = "hidden"
+	
+	    //----Detect user input into textarea
 		$("#editTA").change(function() {
 		   //alert('Textarea is changed');
+		   document.getElementById("playpasted").style.visibility = "visible"; 
 		   var sh2=document.getElementById("shw2");
+ 
+
 		   sh2.innerHTML="Textarea is changed";
-		   setTimeout(function(){ sh2.innerHTML=""; }, 2000);
+		   setTimeout(function(){ sh2.innerHTML=" "; }, 2000);
 		});	  
 	  
 	  
@@ -50,8 +57,8 @@
     <h2 style="text-align:left;" onclick="MMenu();"  >&#9776;</h2>
 	<br/>
     <input onclick="gWdSpk();" type='button' value='🔊 Play Embedded' />
-    <input onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
-    <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
+    <input id="playpasted" onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
+    <input id="spkStop" onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
 	<br/>
 	<textarea class="scrollabletextbox" contenteditable="true" name="note" value="" id="editTA">
 	Paste your Word-phrase into the green box.      
@@ -93,6 +100,8 @@
 		 
 	  function gWdSpk(){
 		 var phtotal=mywd.Sheet1.length;
+		 document.getElementById("spkStop").style.visibility = "visible";
+
 		 e1 = document.getElementById("shw1"); 
 		 //e2 = document.getElementById("shw2"); 
           var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
@@ -102,6 +111,7 @@
 	  }
 	  
 	  function pasteSpk(){
+		 document.getElementById("spkStop").style.visibility = "visible";
 	     var taTxt=document.getElementById("editTA").value;
 		 var s=taTxt.split(/\n\s*\n/); //detect empty line and split them into array
 		// var nump=s.length; // total paragraph
