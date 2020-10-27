@@ -108,8 +108,13 @@
 	  }
 	  function updateTA(){
 	    // var obj=document.getElementById("editTA");
-	     var taTxt=document.getElementById("editTA").value
-	     alert(taTxt)
+	     var taTxt=document.getElementById("editTA").value;
+		 
+		 var s = s.split('\n');
+		 var nump=s.length;
+		 var txt=nump.toString();
+	     alert(txt.concat("1) ",s[0],"\n 2) ",s[1]));
+
 	  
 	  } 		 
 	
