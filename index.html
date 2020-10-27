@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	 .scrollabletextbox {
+		height:100px;
+		width:200px;
+		font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+		font-size: 82%;
+		overflow:scroll;
+		}
+	</style>
+
 	<script type="text/javascript" src="data.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
@@ -33,7 +43,12 @@
     <input onclick="gWdSpk();" type='button' value='🔊 Play' />
     <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
 	
-    <p contenteditable="true" id="editp" style="width: 550px;  overflow: auto;   background: #fef9e7;">
+	<textarea class="scrollabletextbox" name="note" value="" id="editp">
+	Paste your Word-phrase here. Please separate each paragraph with a blank space.
+	</textarea>
+	
+	
+    <p contenteditable="true" id="pedit" style="width: 550px;  overflow: auto;   background: #fef9e7;">
 	Paste your Word-phrase here. Please separate each paragraph by a blank space.
 	</p> 
 
