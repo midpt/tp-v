@@ -128,7 +128,7 @@
 		  e1.innerHTML =s[radn]
 		  var txt=s[radn];
 	     // responsiveVoice.speak(txt);
-		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd});
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd(pasteSpk)});
 	  
 	  }
 	  
@@ -138,8 +138,8 @@
 			f();
 			
 		  };
-	  var pasteSpkEnd=function(pasteSpk){
-	      pasteSpk();
+	  function pasteSpkEnd(f){
+	      f();
 	  }	  
 	  
 
