@@ -111,7 +111,7 @@
 		  e1.innerHTML =mywd.Sheet1[radn].Phrases;
 		  var txt=mywd.Sheet1[radn].Phrases
 	     // responsiveVoice.speak(txt);
-		  responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd(gWdSpk)});
 		  
 		  
 	  }
@@ -132,10 +132,10 @@
 	  
 	  }
 	  
-	 var embedSpkEnd = function (gWdSpk) {
+	  function embedSpkEnd(f) {
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
-			gWdspk();
+			f();
 			
 		  };
 	  var pasteSpkEnd=function(pasteSpk){
