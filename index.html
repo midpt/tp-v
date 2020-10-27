@@ -19,8 +19,21 @@
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	<script>
-	    //----This ensure that when people hit a return key, they insert br element
-		document.execCommand("defaultParagraphSeparator", false, "br"); 
+	  //----This ensure that when people hit a return key, they insert br element
+	  //---not used
+	  document.execCommand("defaultParagraphSeparator", false, "br");
+	  $(document).ready(function() {
+		$("#editTA").change(function() {
+		   //alert('Textarea is changed');
+		   var sh2=document.getElementById("shw2");
+		   sh2.innerHTML="Textarea is changed";
+		});	  
+	  
+	  
+	  });//$(document).ready
+
+
+		
 
 	</script>
 
