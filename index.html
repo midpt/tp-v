@@ -44,16 +44,17 @@
     <input onclick="gWdSpk();" type='button' value='🔊 Play' />
     <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
 	<br/>
-	<textarea class="scrollabletextbox" contenteditable="true" name="note" value="" >
-	Paste your Word-phrase here. Please separate each paragraph with a blank space.
+	<textarea class="scrollabletextbox" contenteditable="true" name="note" value="" id="editTA">
+	Textarea. Paste your Word-phrase here. Please separate each paragraph with a blank space.
 	</textarea>
 	
 	
     <p contenteditable="true" id="editp" class="scrollabletextbox">
-	Paste your Word-phrase here. Separate each paragraph by a blank space.
+	P-element. Paste your Word-phrase here. Separate each paragraph by a blank space.
 	</p> 
 
-    <input onclick="updateWdphrase();" type='button' value='🔊 Update data' />
+    <input onclick="updateWdphrase();" type='button' value='🔊 Update P element' />
+    <input onclick="updateTA();" type='button' value='🔊 Update Textarea' />
 
 	  	 
 	
@@ -79,11 +80,8 @@
 	
 	       ptotal=mywd.Sheet1.length;
 	       rnum= Math.floor(Math.random() * ptotal);  
-
-		 
 		 
 	  function MMenu()	 {
-	  
 	  
 	  }
 		 
@@ -106,7 +104,12 @@
 	     alert(obj.innerHTML)
 	  
 	  }
- 		 
+	  function updateTA(){
+	    // var obj=document.getElementById("editTA");
+	     var taTxt=document.getElementById("editTA").value
+	     alert(taTxt)
+	  
+	  } 		 
 	
 	</script>
   
