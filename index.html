@@ -8,9 +8,9 @@
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	<script>
+	    //----This ensure that when people hit a return key, they insert br element
+		document.execCommand("defaultParagraphSeparator", false, "br"); 
 
-	
-	
 	</script>
 
 	
@@ -33,8 +33,9 @@
     <input onclick="gWdSpk();" type='button' value='🔊 Play' />
     <input onclick="responsiveVoice.speak('');" type='button' value='🔊 Stop' />
 	
-    <input size="10" readonly="readonly" id="uWd" />
+    <p contenteditable="true" id="editp">Paste your Word-phrase here. Please separate each paragraph by a blank space.</p> 
 
+    <input onclick="updateWdphrase();" type='button' value='🔊 Update' />
 
 	  	 
 	
@@ -90,6 +91,11 @@
 		  var txt=mywd.Sheet1[radn].Phrases
 	      responsiveVoice.speak(txt);
 	  
+	  
+	  }
+	  function updateWdphrase(){
+	  
+	     alert(document.getElementyById("editp").innerHTML)
 	  
 	  }
  		 
