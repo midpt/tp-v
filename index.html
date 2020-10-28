@@ -203,6 +203,12 @@ Once you have completed, tap outside the box.
             clearTimeout(pasteTimeObj);
             pasteTimeObj = 0;
           }
+		  //--------check only US--------------  
+		  document.getElementById("us").checked = true; //ensure is checked 
+		  document.getElementById("uk").checked = false; //ensure is unchecked 
+		  document.getElementById("chinese").checked = false; //ensure is unchecked 
+		  document.getElementById("japanese").checked = false; //ensure is unchecked 
+		  
 		 document.getElementById("spkStop").style.visibility = "visible";
 
 		 e1 = document.getElementById("shw1"); 
