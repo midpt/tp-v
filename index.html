@@ -198,6 +198,7 @@ Once you have completed, tap outside the box.
 		  };	
 	         
 	  function gWdSpk(){
+	      responsiveVoice.cancel();
 		 //phtotal=mywd.Sheet1.length;
 		  if (pasteTimeObj) {
             clearTimeout(pasteTimeObj);
@@ -240,6 +241,7 @@ Once you have completed, tap outside the box.
 	     
      	         
 	  function pasteSpk(){
+	    responsiveVoice.cancel();
 	    if (embedTimeObj) {
             clearTimeout(embedTimeObj);
             embedTimeObj = 0;
