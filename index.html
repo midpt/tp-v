@@ -40,10 +40,10 @@
 	  $(document).ready(function() {
 	    document.getElementById("playpasted").style.visibility = "hidden"; 
 		document.getElementById("spkStop").style.visibility = "hidden"
-		document.getElementById("us").style.visibility = "hidden"
-		document.getElementById("uk").style.visibility = "hidden"
-		document.getElementById("chinese").style.visibility = "hidden"
-		document.getElementById("japanese").style.visibility = "hidden"
+		document.getElementById("us_").style.visibility = "hidden"
+		document.getElementById("uk_").style.visibility = "hidden"
+		document.getElementById("chinese_").style.visibility = "hidden"
+		document.getElementById("japanese_").style.visibility = "hidden"
 	
 	    //----Detect user input into textarea
 		$("#editTA").change(function() {
@@ -86,11 +86,11 @@
   
 
  <form name="theForm"> 
-    <input type="checkbox" id="us" name="theGroup" onClick="clearGroup(this);">US
-    <input type="checkbox" id="uk" name="theGroup" onClick="clearGroup(this);">UK
+ <span id="us_">   <input type="checkbox" id="us" name="theGroup" onClick="clearGroup(this);">US </span>
+  <span id="uk_">     <input type="checkbox" id="uk" name="theGroup" onClick="clearGroup(this);">UK/span>
     <br />
-    <input type="checkbox" id="chinese" name="theGroup" onClick="clearGroup(this);">Chinese
-    <input type="checkbox" id="japanese" name="theGroup" onClick="clearGroup(this);">Japanese
+  <span id="chinese_">     <input type="checkbox" id="chinese" name="theGroup" onClick="clearGroup(this);">Chinese/span>
+  <span id="japanese_">     <input type="checkbox" id="japanese" name="theGroup" onClick="clearGroup(this);">Japanese/span>
 
 </form> 
   
