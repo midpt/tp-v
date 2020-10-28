@@ -81,6 +81,17 @@
 <!--    <h2 style="text-align:left;" onclick="MMenu();"  >&#9776;</h2>   -->
   
 
+ <form name="theForm"> 
+    <input type="checkbox" id="us" name="theGroup" onClick="clearGroup(this);">US
+    <input type="checkbox" id="uk" name="theGroup" onClick="clearGroup(this);">UK
+    <br />
+    <input type="checkbox" id="chinese" name="theGroup" onClick="clearGroup(this);">Chinese
+    <input type="checkbox" id="japanese" name="theGroup" onClick="clearGroup(this);">Japanese
+
+</form> 
+  
+  
+  
 	<br/>
     <input onclick="gWdSpk();" type='button' value='🔊 Play Embedded' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
@@ -190,8 +201,16 @@ Once you have completed, tap outside the box.
 		  responsiveVoice.speak(txt, 'US English Female', {onend: pasteSpkEnd});
 	  
 	  }
-	     
-
+	 
+    //----checkboxes checked & unchecked	 
+    function clearGroup(elem) {
+        var group = document.theForm.theGroup;
+        for (var i=0; i<group.length; i++) {
+            if (group[i] != elem) {
+                group[i].checked = false;
+            }
+        }
+    }
 
 	      
 
