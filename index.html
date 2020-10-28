@@ -124,6 +124,19 @@
          // setInterval(function(){ responsiveVoice.resume(); }, 2000);
 	  }
 	  
+
+      function contPasteSpk(){
+	     pasteSpk();
+	  
+	  }
+	  function pasteSpkEnd(em) {
+			//$("#log").text('fnished playing');
+			//alert('finished playing');
+			contPasteSpk();
+			
+		  };
+	  
+	  
 	  function pasteSpk(){
 		 document.getElementById("spkStop").style.visibility = "visible";
 	     var taTxt=document.getElementById("editTA").value;
@@ -136,7 +149,7 @@
 		  e1.innerHTML =s[radn]
 		  var txt=s[radn];
 	     // responsiveVoice.speak(txt);
-		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd()});
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: pasteSpkEnd});
 	  
 	  }
 	  
