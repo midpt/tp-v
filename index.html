@@ -141,6 +141,7 @@ Once you have completed, tap outside the box.
 		 var curVoice="US English Female";
 		 var embedTimeObj=0;
 		 var pasteTimeObj=0;
+		 var lastUserVoiceSel="";
 		 phtotal=mywd.Sheet1.length;
 		 e1 = document.getElementById("shw1"); 
 		 e2 = document.getElementById("shw2"); 
@@ -250,6 +251,9 @@ Once you have completed, tap outside the box.
 	  
 	     
 		 document.getElementById("spkStop").style.visibility = "visible";
+		 
+		 if (lastUserVoiceSel !="") curVoice=lastUserVoiceSel;
+		 
 	     var taTxt=document.getElementById("editTA").value;
 		 var s=taTxt.split(/\n\s*\n/); //detect empty line and split them into array
 		// var nump=s.length; // total paragraph
@@ -274,15 +278,19 @@ Once you have completed, tap outside the box.
 			else{
 			   if (group[i].getAttribute("id").toUpperCase().indexOf("US")!=-1){
 			      curVoice="US English Female";
+				  lastUserVoiceSel="US English Female";
 			   }
 			   if (group[i].getAttribute("id").toUpperCase().indexOf("UK")!=-1){
 			      curVoice="UK English Female";
+				  lastUserVoiceSel="UK English Female";
 			   }
 			   if (group[i].getAttribute("id").toUpperCase().indexOf("CHINESE")!=-1){
 			      curVoice="Chinese Female";
+				  lastUserVoiceSel="Chinese Female";
 			   }
 			   if (group[i].getAttribute("id").toUpperCase().indexOf("JAPANESE")!=-1){
 			      curVoice="Japanese Female";
+				  lastUserVoiceSel="Japanese Female";
 			   }			   
             }
         }
