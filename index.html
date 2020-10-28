@@ -147,6 +147,7 @@ Once you have completed, tap outside the box.
 	     rnum= Math.floor(Math.random() * phtotal);  
 		 
 		 //-----Derive available voice list
+	 function availVoiceEnable(){	 
 		 var voicelist = responsiveVoice.getVoices();
 		 var voiceTotal=voicelist.length;
 		 for (n=0;n<voiceTotal;n++){
@@ -171,7 +172,11 @@ Once you have completed, tap outside the box.
 			   console.log("found chinese");
 			}		 
 		}
-	                       	        
+	  }
+       //-------------end availVoiceEnable()-----	
+
+      setTimeout(function(){ availVoiceEnable(); }, 2000);
+	   
 	            	      
 	  function MMenu()	 {
 	  
