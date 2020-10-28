@@ -206,11 +206,26 @@ Once you have completed, tap outside the box.
             clearTimeout(pasteTimeObj);
             pasteTimeObj = 0;
           }
-		  //--------check only US--------------  
-		  document.getElementById("us").checked = true; //ensure is checked 
-		  document.getElementById("uk").checked = false; //ensure is unchecked 
-		  document.getElementById("chinese").checked = false; //ensure is unchecked 
-		  document.getElementById("japanese").checked = false; //ensure is unchecked 
+		  //--------check only US, if last checked is not UK--------------  
+		 //---update the last selected checked Voice
+		 if (lastUserVoiceSel.toUpperCase().indexOf("UK ENGLISH") !=-1){
+ 		      curVoice=lastUserVoiceSel;
+			  //--------check uk--------------  
+				  document.getElementById("us").checked = false; //ensure is checked 
+				  document.getElementById("uk").checked = true; //ensure is unchecked 
+				  document.getElementById("chinese").checked = false; //ensure is unchecked 
+				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+		  }else{
+		          curVoice="US English Female";
+			  //--------check us--------------  
+				  document.getElementById("us").checked = true; //ensure is checked 
+				  document.getElementById("uk").checked = false; //ensure is unchecked 
+				  document.getElementById("chinese").checked = false; //ensure is unchecked 
+				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+
+		 }		  
+		  
+
 		  
 		  document.getElementById("spkStop").style.visibility = "visible";
 
@@ -256,28 +271,28 @@ Once you have completed, tap outside the box.
 		 if (lastUserVoiceSel !=""){
  		   curVoice=lastUserVoiceSel;
 			  //--------check only US--------------  
-			  if (lastUserVoiceSel.	toUpperCase().indexOf("US ENGLISH") !=-1){
+			  if (lastUserVoiceSel.toUpperCase().indexOf("US ENGLISH") !=-1){
 				  document.getElementById("us").checked = true; //ensure is checked 
 				  document.getElementById("uk").checked = false; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
 				  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	  
 			  //--------check only UK--------------  
-			  if (lastUserVoiceSel.	toUpperCase().indexOf("UK ENGLISH") !=-1){
+			  if (lastUserVoiceSel.toUpperCase().indexOf("UK ENGLISH") !=-1){
 				  document.getElementById("us").checked = false; //ensure is checked 
 				  document.getElementById("uk").checked = true; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
 				  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	  
 			  //--------check only chinese--------------  
-			  if (lastUserVoiceSel.	toUpperCase().indexOf("CHINESE") !=-1){
+			  if (lastUserVoiceSel.toUpperCase().indexOf("CHINESE") !=-1){
 				  document.getElementById("us").checked = false; //ensure is checked 
 				  document.getElementById("uk").checked = false; //ensure is unchecked 
 				  document.getElementById("chinese").checked = true; //ensure is unchecked 
 				  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	 		 
 			  //--------check only japanese--------------  
-			  if (lastUserVoiceSel.	toUpperCase().indexOf("JAPANESE") !=-1){
+			  if (lastUserVoiceSel.toUpperCase().indexOf("JAPANESE") !=-1){
 				  document.getElementById("us").checked = false; //ensure is checked 
 				  document.getElementById("uk").checked = false; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
