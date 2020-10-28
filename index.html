@@ -138,7 +138,9 @@ Once you have completed, tap outside the box.
 	     var phtotal=0, e1=0, e2=0, rnum=0;
 		 var str1=" ";
 		 var str2="";
-		 var curVoice="US English Female";    
+		 var curVoice="US English Female";
+		 var embedTimeObj=0;
+		 var pasteTimeObj=0;
 		 phtotal=mywd.Sheet1.length;
 		 e1 = document.getElementById("shw1"); 
 		 e2 = document.getElementById("shw2"); 
@@ -184,9 +186,9 @@ Once you have completed, tap outside the box.
 	  }
 
       function contEmbedSpk(){
-	   setTimeout(function(){  gWdSpk(); }, 2000);
+	    embedTimeObj=setTimeout(function(){  gWdSpk(); }, 2000);
 	     //gWdSpk();  
-	     
+
 	  }
 	  function embedSpkEnd() {
 			//$("#log").text('fnished playing');
@@ -197,6 +199,10 @@ Once you have completed, tap outside the box.
 	         
 	  function gWdSpk(){
 		 //phtotal=mywd.Sheet1.length;
+		  if (pasteTimeObj) {
+            clearTimeout(pasteTimeObj);
+            pasteTimeObj = 0;
+          }
 		 document.getElementById("spkStop").style.visibility = "visible";
 
 		 e1 = document.getElementById("shw1"); 
@@ -215,7 +221,7 @@ Once you have completed, tap outside the box.
 	          
              
       function contPasteSpk(){
-	     setTimeout(function(){  pasteSpk(); }, 2000);
+	     pasteTimeObj=setTimeout(function(){  pasteSpk(); }, 2000);
 	     //pasteSpk();
 	      
 	  }
@@ -228,6 +234,12 @@ Once you have completed, tap outside the box.
 	     
 	  
 	  function pasteSpk(){
+	    if (embedTimeObj) {
+            clearTimeout(embedTimeObj);
+            embedTimeObj = 0;
+        }
+	  
+	  
 		 document.getElementById("spkStop").style.visibility = "visible";
 	     var taTxt=document.getElementById("editTA").value;
 		 var s=taTxt.split(/\n\s*\n/); //detect empty line and split them into array
