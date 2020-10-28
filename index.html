@@ -116,8 +116,8 @@
 	  }
 	  function embedSpkEnd() {
 			//$("#log").text('fnished playing');
-			alert('finished playing');
-			//contEmbedSpk();
+			//alert('finished playing');
+			contEmbedSpk();
 			
 		  };	
 	         
@@ -133,6 +133,7 @@
 	      //responsiveVoice.speak(txt);
 		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
           // responsiveVoice.speak(txt, 'UK English Female');//work in mobile
+		  // responsiveVoice.speak(txt, 'UK English Female', {onend: embedSpkEnd});//uk voice with callback mobile not working
 		  responsiveVoice.speak(txt, 'US English Female', {onend: embedSpkEnd}); //mobile  onend not working
 		        
 	  }	 
