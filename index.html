@@ -104,8 +104,8 @@
 	  }
 	  function embedSpkEnd() {
 			//$("#log").text('fnished playing');
-			//alert('finished playing');
-			contEmbedSpk();
+			alert('finished playing');
+			//contEmbedSpk();
 			
 		  };		  
 		   
@@ -120,7 +120,8 @@
 		  var txt=mywd.Sheet1[radn].Phrases
 	      //responsiveVoice.speak(txt);
 		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
-           responsiveVoice.speak(txt, 'UK English Female');
+          // responsiveVoice.speak(txt, 'UK English Female');//work in mobile
+		  responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd}); 
 	  }
 	    
              
