@@ -138,7 +138,7 @@ Once you have completed, tap outside the box.
 	     var phtotal=0, e1=0, e2=0, rnum=0;
 		 var str1=" ";
 		 var str2="";
-		     
+		 var curVoice="US English Female";    
 		 phtotal=mywd.Sheet1.length;
 		 e1 = document.getElementById("shw1"); 
 		 e2 = document.getElementById("shw2"); 
@@ -207,7 +207,7 @@ Once you have completed, tap outside the box.
 		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
           // responsiveVoice.speak(txt, 'UK English Female');//work in mobile
 		  // responsiveVoice.speak(txt, 'UK English Female', {onend: embedSpkEnd});//uk voice with callback mobile not working
-		  responsiveVoice.speak(txt, 'US English Female', {onend: embedSpkEnd}); //mobile  onend not working
+		  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		        
 	  }	 
 	                  
@@ -238,7 +238,7 @@ Once you have completed, tap outside the box.
 		  e1.innerHTML =s[radn]
 		  var txt=s[radn];
 	     // responsiveVoice.speak(txt);
-		  responsiveVoice.speak(txt, 'US English Female', {onend: pasteSpkEnd});
+		  responsiveVoice.speak(txt, curVoice, {onend: pasteSpkEnd});
 	  
 	  }
 	 
@@ -248,6 +248,20 @@ Once you have completed, tap outside the box.
         for (var i=0; i<group.length; i++) {
             if (group[i] != elem) {
                 group[i].checked = false;
+			}
+			else{
+			   if (group[i].getAttribute("id").toUpperCase().indexOf("US")!=-1){
+			      curVoice="US English Female";
+			   }
+			   if (group[i].getAttribute("id").toUpperCase().indexOf("UK")!=-1){
+			      curVoice="UK English Female";
+			   }
+			   if (group[i].getAttribute("id").toUpperCase().indexOf("CHINESE")!=-1){
+			      curVoice="Chinese Female";
+			   }
+			   if (group[i].getAttribute("id").toUpperCase().indexOf("JAPANESE")!=-1){
+			      curVoice="Japanese Female";
+			   }			   
             }
         }
     }
