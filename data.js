@@ -265,7 +265,7 @@ mywd={
             "Phrases": "If you want to be an absolute being, you must become a unique being. Outside absoluteness, there is no concept of uniqueness. This something you have to know. "
         },
         {
-            "Phrases": "Absoluteness must be unique, unchanging and eternal... There must be such qualitie. [God is] absolutely unique, absolutely unchanging and absolutely eternal. "
+            "Phrases": "Absoluteness must be unique, unchanging and eternal. There must be such qualities. [God is] absolutely unique, absolutely unchanging and absolutely eternal. "
         },
         {
             "Phrases": " It is only through you, their descendants, that they (spirit beings) can perfect themselves."
