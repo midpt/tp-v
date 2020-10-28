@@ -118,9 +118,9 @@
           var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 		  e1.innerHTML =mywd.Sheet1[radn].Phrases;
 		  var txt=mywd.Sheet1[radn].Phrases
-	      responsiveVoice.speak(txt);
+	      //responsiveVoice.speak(txt);
 		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
-    
+           responsiveVoice.speak(txt, 'UK English Male');
 	  }
 	  
          
