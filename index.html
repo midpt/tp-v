@@ -145,7 +145,7 @@ Once you have completed, tap outside the box.
   
   	<script>
 	     var phtotal=0, e1=0, e2=0, rnum=0;
-		 var wd20char = []; // save all word-phrase first 20 chars to be displayed using clusterize.js 
+		 var wd30char = []; // save all word-phrase first 30 chars to be displayed using clusterize.js 
 		 var str1=" ";
 		 var str2="";
 		 var curVoice="US English Female";
@@ -161,17 +161,17 @@ Once you have completed, tap outside the box.
 	     rnum= Math.floor(Math.random() * phtotal);
 
 		 for (n=0;n<phtotal;n++){
-		     var subs=mywd.Sheet1[n].Phrases.substr(0,20) ;
-			 subs="<div>"+subs+"</div>"
-		     wd20char.push(subs);
+		     var subs=mywd.Sheet1[n].Phrases.substr(0,30) ;
+			 subs="<div>"+n+") "+subs+"</div>"
+		     wd30char.push(subs);
 		 }		 
           //---Initialise clusterize.js----   
 			var clusterize = new Clusterize({
-			  rows: wd20char,
+			  rows: wd30char,
 			  scrollId: 'scrollArea',
 			  contentId: 'contentArea'
 			});		 
-		 
+		   
 		 //-----Derive available voice list
 	 function availVoiceEnable(){	 
 		 var voicelist = responsiveVoice.getVoices();
