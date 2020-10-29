@@ -113,11 +113,14 @@
 	<p id="shw1" class="shw1">Click 'Play Embedded'</p>
 	<p id="shw2" class="shw2"></p>
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div id="scrollArea" class="clusterize-scroll">
-  <div id="contentArea" class="clusterize-content">
-    <div class="clusterize-no-data">Loading data…</div>
-  </div>
-</div>    
+	
+	<!---  Display 20 characters word-phrase            -->
+	<div id="scrollArea" class="clusterize-scroll">
+	  <div id="contentArea" class="clusterize-content">
+		<div class="clusterize-no-data">Loading data…</div>
+	  </div>
+	</div>   
+	
 <br><br><br><br><br><br><br><br><br><br>      
 <textarea class="scrollabletextbox" contenteditable="true" name="note" value="" id="editTA">
 Paste your own Word-phrase into the green box.      
@@ -150,11 +153,6 @@ Once you have completed, tap outside the box.
 		 var pasteTimeObj=0;
 		 var lastUserVoiceSel="";
 		 phtotal=mywd.Sheet1.length; //mywd & Sheet1 is defined in  data.js file
-		 for (n=0;n<phtotal;n++){
-		     var subs=mywd.Sheet1[n].Phrases.substr(0,20) ;
-			 subs="<div>"+subs+"</div>"
-		     wd20char.push(subs);
-		 }
 		 
 		 e1 = document.getElementById("shw1"); 
 		 e2 = document.getElementById("shw2"); 
@@ -162,8 +160,17 @@ Once you have completed, tap outside the box.
 	    //phtotal=mywd.Sheet1.length;
 	     rnum= Math.floor(Math.random() * phtotal);
 
-
-		 
+		 for (n=0;n<phtotal;n++){
+		     var subs=mywd.Sheet1[n].Phrases.substr(0,20) ;
+			 subs="<div>"+subs+"</div>"
+		     wd20char.push(subs);
+		 }		 
+          //---Initialise clusterize.js----   
+			var clusterize = new Clusterize({
+			  rows: wd20char,
+			  scrollId: 'scrollArea',
+			  contentId: 'contentArea'
+			});		 
 		 
 		 //-----Derive available voice list
 	 function availVoiceEnable(){	 
