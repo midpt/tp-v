@@ -165,11 +165,11 @@ Once you have completed, tap outside the box.
 			   document.getElementById("uk").style.visibility ="visible";
 			   console.log("found uk");
 			}
-		    if (voicelist[n].name.toUpperCase().indexOf("JAPANESE ") !=-1) {
-			   document.getElementById("japanese_").style.visibility ="visible";
-			   document.getElementById("japanese").style.visibility ="visible";
-			   console.log("found japanese");
-			}		 
+		  //  if (voicelist[n].name.toUpperCase().indexOf("JAPANESE ") !=-1) {
+			//   document.getElementById("japanese_").style.visibility ="visible";
+			//   document.getElementById("japanese").style.visibility ="visible";
+			//   console.log("found japanese");
+			//}		 
 		    if (voicelist[n].name.toUpperCase().indexOf("CHINESE ") !=-1) {
 			   document.getElementById("chinese_").style.visibility ="visible";
 			   document.getElementById("chinese").style.visibility ="visible";
@@ -214,14 +214,14 @@ Once you have completed, tap outside the box.
 				  document.getElementById("us").checked = false; //ensure is checked 
 				  document.getElementById("uk").checked = true; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+				 // document.getElementById("japanese").checked = false; //ensure is unchecked 
 		  }else{
 		          curVoice="US English Female";
 			  //--------check us--------------  
 				  document.getElementById("us").checked = true; //ensure is checked 
 				  document.getElementById("uk").checked = false; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 
 		 }		  
 		  
@@ -275,29 +275,29 @@ Once you have completed, tap outside the box.
 				  document.getElementById("us").checked = true; //ensure is checked 
 				  document.getElementById("uk").checked = false; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	  
 			  //--------check only UK--------------  
 			  if (lastUserVoiceSel.toUpperCase().indexOf("UK ENGLISH") !=-1){
 				  document.getElementById("us").checked = false; //ensure is checked 
 				  document.getElementById("uk").checked = true; //ensure is unchecked 
 				  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	  
 			  //--------check only chinese--------------  
 			  if (lastUserVoiceSel.toUpperCase().indexOf("CHINESE") !=-1){
 				  document.getElementById("us").checked = false; //ensure is checked 
 				  document.getElementById("uk").checked = false; //ensure is unchecked 
 				  document.getElementById("chinese").checked = true; //ensure is unchecked 
-				  document.getElementById("japanese").checked = false; //ensure is unchecked 
+				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	 		 
 			  //--------check only japanese--------------  
-			  if (lastUserVoiceSel.toUpperCase().indexOf("JAPANESE") !=-1){
-				  document.getElementById("us").checked = false; //ensure is checked 
-				  document.getElementById("uk").checked = false; //ensure is unchecked 
-				  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				  document.getElementById("japanese").checked = true; //ensure is unchecked 
-			  }	 
+			 // if (lastUserVoiceSel.toUpperCase().indexOf("JAPANESE") !=-1){
+			//	  document.getElementById("us").checked = false; //ensure is checked 
+			//	  document.getElementById("uk").checked = false; //ensure is unchecked 
+			//	  document.getElementById("chinese").checked = false; //ensure is unchecked 
+			//	  document.getElementById("japanese").checked = true; //ensure is unchecked 
+			 // }	 
 		  }
 		 //------End if  (lastUserVoiceSel !="")
          		 
@@ -336,10 +336,10 @@ Once you have completed, tap outside the box.
 			      curVoice="Chinese Female";
 				  lastUserVoiceSel="Chinese Female";
 			   }
-			   if (group[i].getAttribute("id").toUpperCase().indexOf("JAPANESE")!=-1){
-			      curVoice="Japanese Female";
-				  lastUserVoiceSel="Japanese Female";
-			   }			   
+			  // if (group[i].getAttribute("id").toUpperCase().indexOf("JAPANESE")!=-1){
+			   //   curVoice="Japanese Female";
+				//  lastUserVoiceSel="Japanese Female";
+			  // }			   
             }
         }
     }
