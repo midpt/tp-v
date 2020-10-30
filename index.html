@@ -184,6 +184,7 @@ Once you have completed, tap outside the box.
 			 //  if you are not interested to programatically scroll to the text, can ignore the class
 			// subs='<div class="scrollable-item">'+n+') '+subs+'</div>';
 			 subs='<div>'+n+') '+subs+'</div>';
+			 subs="<div onClick='clusterTxtGet()'>"+n+") "+subs+"</div>";
 		     wd30char.push(subs);
 		 }		 
           //---Initialise clusterize.js----   
@@ -318,7 +319,20 @@ Once you have completed, tap outside the box.
 		        
 	  }	 
 	  //--------end function embedSpk------------------                
-	                                            
+	                                
+
+      function clusterTxtGet(){
+	    var res=event.srcElement.innerHTML;
+	     var pos=res.indexOf(") ");
+		 var inxs=res.substr(0,pos);
+		 var inx=parseInt(inxs);
+		 var txt=mywd.Sheet1[inx].Phrases
+		 responsiveVoice.cancel();
+		 responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+
+	  }
+
+									
                  
       function contPasteSpk(){
 	     pasteTimeObj=setTimeout(function(){  pasteSpk(); }, 2000);
