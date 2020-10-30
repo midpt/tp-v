@@ -190,8 +190,15 @@ Once you have completed, tap outside the box.
 			  contentId: 'contentArea'
 			});		
 
+			//----function will be used at the end of embedSpk()
 			$.fn.scrollDivToElement = function(childSel) {
-				if (! this.length) return this;
+			    
+				if (! this.length){
+				    console.log("this.length NULL !!!!");
+  				  return this;
+				  }else{
+				    console.log("this.length="+this.length.toString())
+				  }
 
 				return this.each(function() {
 					let parentEl = $(this);
