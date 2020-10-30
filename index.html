@@ -190,7 +190,7 @@ Once you have completed, tap outside the box.
 			  contentId: 'contentArea'
 			});		
 
-			//----function will be used at the end of embedSpk()
+			//----function will be used at the in embedSpk()
 			$.fn.scrollDivToElement = function(childSel) {
 			    
 				if (! this.length){
@@ -203,7 +203,7 @@ Once you have completed, tap outside the box.
 				return this.each(function() {
 					let parentEl = $(this);
 					let childEl = parentEl.find(childSel);
-
+                    console.log("childEl.length="+childEl.length);
 					if (childEl.length > 0) {
 						parentEl.scrollTop(
 							parentEl.scrollTop() - parentEl.offset().top + childEl.offset().top - (parentEl.outerHeight() / 2) + (childEl.outerHeight() / 2)
