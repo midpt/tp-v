@@ -180,7 +180,8 @@ Once you have completed, tap outside the box.
 		     var subs=mywd.Sheet1[n].Phrases.substr(0,30) ;
 			 //  class='scrollable-item' is added to allow it to be scroll to the line we want
 			 //  if you are not interested to programatically scroll to the text, can ignore the class
-			 subs='<div class="scrollable-item">'+n+') '+subs+'</div>';
+			// subs='<div class="scrollable-item">'+n+') '+subs+'</div>';
+			 subs='<div>'+n+') '+subs+'</div>';
 		     wd30char.push(subs);
 		 }		 
           //---Initialise clusterize.js----   
@@ -191,6 +192,7 @@ Once you have completed, tap outside the box.
 			});		
 
 			//----function will be used at the in embedSpk()
+	/*		
 			$.fn.scrollDivToElement = function(childSel) {
 			    
 				if (! this.length){
@@ -211,7 +213,7 @@ Once you have completed, tap outside the box.
 					}
 				});
 			};
-			
+		*/	
 		             
 		 //-----Derive available voice list
 	 function availVoiceEnable(){	 
@@ -302,8 +304,8 @@ Once you have completed, tap outside the box.
 		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
 		  
 		  //-------Scroll <div> text to reveal current word-phrase line----
-		  console.log('.scrollable-item:eq('+radn+')');
-		  $('.clusterize-scroll').scrollDivToElement('.scrollable-item:eq('+radn+')');
+		 // console.log('.scrollable-item:eq('+radn+')');
+		 // $('.clusterize-scroll').scrollDivToElement('.scrollable-item:eq('+radn+')');
 		     
 		  var txt=mywd.Sheet1[radn].Phrases
 	      //responsiveVoice.speak(txt);
