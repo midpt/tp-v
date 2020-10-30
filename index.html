@@ -325,7 +325,9 @@ Once you have completed, tap outside the box.
 	    var res=event.srcElement.innerHTML;
 	     var pos=res.indexOf(") ");
 		 var inxs=res.substr(0,pos);
+		 console.log(") pos="+pos);
 		 var inx=parseInt(inxs);
+		 console.log("inx="+inx);
 		 var txt=mywd.Sheet1[inx].Phrases
 		 responsiveVoice.cancel();
 		 responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
