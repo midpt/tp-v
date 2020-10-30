@@ -119,10 +119,10 @@
     <input onclick="clusterClicked=false;embedSpk();" type='button' value='🔊 Play Embedded' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
     <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='🔊 Stop' />
-	<input id="spkPause" onclick="if (responsiveVoice.isPlaying())responsiveVoice.pause();else responsiveVoice.resume()" type='button' value='&#9199' />
+	<input id="spkPause" onclick="if (responsiveVoice.isPlaying()){responsiveVoice.pause();}else{ responsiveVoice.resume();}" type='button' value='&#9199' />
           
 	
-	<br><br>
+	<br><br> 
   
                           
     
