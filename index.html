@@ -116,7 +116,7 @@
           
   
 	<br/>
-    <input onclick="embedSpk();" type='button' value='🔊 Play Embedded' />
+    <input onclick="clusterClicked=false;embedSpk();" type='button' value='🔊 Play Embedded' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
     <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='🔊 Stop' />
 	
@@ -309,13 +309,13 @@ Once you have completed, tap outside the box.
 			  var txt=mywd.Sheet1[radn].Phrases
 			  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		  			  
-           } else{
+           } else{ // user clicked from the list. Speak the line user clicked
                clearTimeout(embedTimeObj);  
                var radn=inx;
 			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
-			   clusterClicked=false;
+			   //clusterClicked=false;
 			   var txt=mywd.Sheet1[radn].Phrases
-			  responsiveVoice.speak(txt, curVoice, {}); //mobile  onend not working
+			    responsiveVoice.speak(txt, curVoice); //mobile  onend not working
 			}		   
 		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
 		  
