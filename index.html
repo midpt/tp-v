@@ -16,6 +16,12 @@
 		font-size: 82%;
 		overflow:scroll;
 		}
+	/*  Use in clusterize data embedded with <div class='scrollable-item'>xxxxxx</div>           */	
+	/*  look under     class=scrollable-item        */	
+	.scrollable-item {
+		font-size: 20px;
+		padding: 10px;
+	}		
 	.shw1{
 	      margin: auto;
  		  border: 1px solid black;
@@ -41,6 +47,7 @@
 	<script type="text/javascript" src="data.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<!-- clusterize js  is to create a smooth scroll div with many div row 10,000 no problem   -->
 	<script src='clusterize.min.js'></script>
 	<script>
 	  //----This ensure that when people hit a return key, they insert br element
@@ -122,6 +129,7 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	
 	<!---  Display 30 characters word-phrase            -->
+	<!-- Create more than 10,000 div scrollable using clusterize js  -->
 	<div id="scrollArea" class="clusterize-scroll">
 	  <div id="contentArea" class="clusterize-content">
 		<div class="clusterize-no-data">Loading data…</div>
@@ -166,10 +174,13 @@ Once you have completed, tap outside the box.
          rnum= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 	    //phtotal=mywd.Sheet1.length;
 	     rnum= Math.floor(Math.random() * phtotal);
-
+          
+		  //---create 1000 (from data.js) div row using clusterize.js library
 		 for (n=0;n<phtotal;n++){
 		     var subs=mywd.Sheet1[n].Phrases.substr(0,30) ;
-			 subs="<div>"+n+") "+subs+"</div>"
+			 //  class='scrollable-item' is added to allow it to be scroll to the line we want
+			 //  if you are not interested to programatically scroll to the text, can ignore the class
+			 subs="<div class='scrollable-item'>"+n+") "+subs+"</div>"
 		     wd30char.push(subs);
 		 }		 
           //---Initialise clusterize.js----   
@@ -177,7 +188,23 @@ Once you have completed, tap outside the box.
 			  rows: wd30char,
 			  scrollId: 'scrollArea',
 			  contentId: 'contentArea'
-			});		 
+			});		
+
+			$.fn.scrollDivToElement = function(childSel) {
+				if (! this.length) return this;
+
+				return this.each(function() {
+					let parentEl = $(this);
+					let childEl = parentEl.find(childSel);
+
+					if (childEl.length > 0) {
+						parentEl.scrollTop(
+							parentEl.scrollTop() - parentEl.offset().top + childEl.offset().top - (parentEl.outerHeight() / 2) + (childEl.outerHeight() / 2)
+						);
+					}
+				});
+			};
+			
 		        
 		 //-----Derive available voice list
 	 function availVoiceEnable(){	 
@@ -265,7 +292,8 @@ Once you have completed, tap outside the box.
 		  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
 		  var scrollAmt=(40)*radn
            
-		  document.getElementById('scrollArea').scrollTop = scrollAmt;
+		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
+		  $('.clusterize-scroll').scrollDivToElement('.scrollable-item:eq(radn)');
 		  
 		  var txt=mywd.Sheet1[radn].Phrases
 	      //responsiveVoice.speak(txt);
