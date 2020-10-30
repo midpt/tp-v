@@ -263,9 +263,9 @@ Once you have completed, tap outside the box.
 		 //e2 = document.getElementById("shw2"); 
           var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 		  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
-		  
-
-		  document.getElementById('scrollArea').scrollTop = radn;
+		  var scrollAmt=(phtotal/70)*radn
+           
+		  document.getElementById('scrollArea').scrollTop = scrollAmt;
 		  
 		  var txt=mywd.Sheet1[radn].Phrases
 	      //responsiveVoice.speak(txt);
