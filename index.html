@@ -310,7 +310,8 @@ Once you have completed, tap outside the box.
 			  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
-               clearTimeout(embedTimeObj);  
+               clearTimeout(embedTimeObj); 
+			   
                var radn=inx;
 			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
 			   //clusterClicked=false;
@@ -323,12 +324,12 @@ Once you have completed, tap outside the box.
 		 // console.log('.scrollable-item:eq('+radn+')');
 		 // $('.clusterize-scroll').scrollDivToElement('.scrollable-item:eq('+radn+')');
 		     
-		  var txt=mywd.Sheet1[radn].Phrases
+		//  var txt=mywd.Sheet1[radn].Phrases
 	      //responsiveVoice.speak(txt);
 		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
           // responsiveVoice.speak(txt, 'UK English Female');//work in mobile
 		  // responsiveVoice.speak(txt, 'UK English Female', {onend: embedSpkEnd});//uk voice with callback mobile not working
-		  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+		 // responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		        
 	  }	 
 	  //--------end function embedSpk------------------                
