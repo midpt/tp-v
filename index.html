@@ -109,7 +109,7 @@
           
   
 	<br/>
-    <input onclick="gWdSpk();" type='button' value='🔊 Play Embedded' />
+    <input onclick="embedSpk();" type='button' value='🔊 Play Embedded' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='🔊 Play Pasted ' />
     <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='🔊 Stop' />
 	
@@ -217,8 +217,8 @@ Once you have completed, tap outside the box.
 	  }
 
       function contEmbedSpk(){
-	    embedTimeObj=setTimeout(function(){  gWdSpk(); }, 2000);
-	     //gWdSpk();  
+	    embedTimeObj=setTimeout(function(){  embedSpk(); }, 2000);
+	     //embedSpk();  
 
 	  }
 	  function embedSpkEnd() {
@@ -228,7 +228,7 @@ Once you have completed, tap outside the box.
 			
 		  };	
    	             
-	  function gWdSpk(){
+	  function embedSpk(){
 	      responsiveVoice.cancel();
 		  curVoice="US English Female";
 		 //phtotal=mywd.Sheet1.length;
@@ -271,9 +271,9 @@ Once you have completed, tap outside the box.
 		  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		        
 	  }	 
-	  //--------end function gWdSpk------------------                
+	  //--------end function embedSpk------------------                
 	            
-             
+                 
       function contPasteSpk(){
 	     pasteTimeObj=setTimeout(function(){  pasteSpk(); }, 2000);
 	     //pasteSpk();
