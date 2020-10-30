@@ -163,6 +163,8 @@ Once you have completed, tap outside the box.
 		 var wd30char = []; // save all word-phrase first 30 chars to be displayed using clusterize.js 
 		 var str1=" ";
 		 var str2="";
+		 var inx=0;
+		 var clusterClicked=false;
 		 var curVoice="US English Female";
 		 var curVoice="English United States";
 		 
@@ -300,10 +302,15 @@ Once you have completed, tap outside the box.
 
 		 e1 = document.getElementById("shw1"); 
 		 //e2 = document.getElementById("shw2"); 
-          var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
-		  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
-		  var scrollAmt=(40)*radn
-                    
+		  if (!clusterClicked){
+			  var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
+			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
+			  var scrollAmt=(40)*radn
+           } else{
+
+               var radn=inx;
+			   clusterClicked=false;
+			}		   
 		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
 		  
 		  //-------Scroll <div> text to reveal current word-phrase line----
@@ -326,12 +333,13 @@ Once you have completed, tap outside the box.
 	     var pos=res.indexOf(") ");
 		 var inxs=res.substr(0,pos);
 		 console.log(") pos="+pos);
-		 var inx=parseInt(inxs);
+		 inx=parseInt(inxs);
 		 console.log("inx="+inx);
-		 var txt=mywd.Sheet1[inx].Phrases
-		 responsiveVoice.cancel();
-		 responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
-
+		 clusterClicked=true;
+		// var txt=mywd.Sheet1[inx].Phrases
+		// responsiveVoice.cancel();
+		// responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+           embedSpk();
 	  }
 
 	      	         							
