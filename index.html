@@ -40,7 +40,35 @@
 	     margin: auto;
 		 width:410px;
          border: 1px solid black;
-      }	    
+      }	
+
+.wordart {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.wordart.slate {
+    transform: scale(1, 1.5);
+    -webkit-transform: scale(1, 1.5);
+    -moz-transform: scale(1, 1.5);
+    -o-transform: scale(1, 1.5);
+    -ms-transform: scale(1, 1.5);
+}
+
+.wordart.slate .text {
+    font-family: Times, 'Times New Roman', serif;
+    font-weight: normal;
+    color: #2F5485;
+    text-shadow: 0.03em 0.03em 0px #B3B3B3;
+}
+ 	  
 	                    
 	</style>
                       
@@ -114,7 +142,14 @@
 
 </form> 
   
-            
+  <br/>
+
+<div class="wordart slate"><span class="text">Immerse yourself with these heavenly words of Father Moon.</span></div>
+<div class="wordart slate"><span class="text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Let these words inject life around you.</span></div>
+<br><br>
+<div class="wordart slate"><span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Click 'Play Embedded' to start.</span></div>
+  
+  
   
 	<br/>
     <input onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Play Embedded' />
