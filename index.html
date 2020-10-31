@@ -50,6 +50,7 @@
 	<!-- clusterize js  is to create a smooth scroll div with many div row 10,000 no problem   -->
 	<script src='clusterize.min.js'></script>
 	<script>
+	 var ispaused=false;
 	  //----This ensure that when people hit a return key, they insert br element
 	  //---not used
 	  document.execCommand("defaultParagraphSeparator", false, "br");
@@ -166,7 +167,7 @@ Once you have completed, tap outside the box.
 		 var str1=" ";
 		 var str2="";
 		 var inx=0;
-		 var ispaused=false;
+		 
 		 var clusterClicked=false;
 		 var curVoice="US English Female";
 		 var curVoice="English United States";
@@ -339,15 +340,15 @@ Once you have completed, tap outside the box.
  	    
       function spkPause()		{
              if (responsiveVoice.isPlaying()){
-			    if (!ispause){
+			    if (!ispaused){
 			      console.log('isplaying so pause it.');
 			      responsiveVoice.pause();
-				  ispause=true;
-				 }else{ // ispause=true
+				  ispaused=true;
+				 }else{ // ispaused=true
 			 
 			      console.log('not playing'); 
 				  responsiveVoice.resume();
-				  ispause=false;
+				  ispaused=false;
 				}
 			}	  
 	  
