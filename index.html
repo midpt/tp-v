@@ -379,6 +379,10 @@ Click (or tap) "Play Pasted" button.
 	      	         							
                  
       function contPasteSpk(){
+	    if (embedTimeObj) {
+            clearTimeout(embedTimeObj);
+            embedTimeObj = 0;
+        }	  
 	     pasteTimeObj=setTimeout(function(){  pasteSpk(); }, 2000);
 	     //pasteSpk();
 	      
@@ -390,7 +394,7 @@ Click (or tap) "Play Pasted" button.
 			
 		  };
 	     
-     	         
+      	         
 	  function pasteSpk(){
 	    responsiveVoice.cancel();
 		
