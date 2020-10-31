@@ -311,6 +311,7 @@ Once you have completed, tap outside the box.
 			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
 			  var scrollAmt=(40)*radn
 			  var txt=mywd.Sheet1[radn].Phrases
+			  ispaused=false;
 			  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
@@ -320,6 +321,7 @@ Once you have completed, tap outside the box.
 			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
 			   //clusterClicked=false;
 			   var txt=mywd.Sheet1[radn].Phrases
+			   ispaused=false;
 			    responsiveVoice.speak(txt, curVoice); //mobile  onend not working
 			}		   
 		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
