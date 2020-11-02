@@ -1,6 +1,0 @@
-
-Put on headphone, click "Play Embedded"
-
-Tested in Mobile Samsung browser and Chrome, ok
-Pause/play don't seem to work in mobile browser.
-

@@ -1,0 +1,37 @@
+
+https://midpt.github.io/tp-v/
+
+
+Purpose is to randomly speak TP words (998 of them)
+
+Put on headphone, click "Play Embedded"
+
+Tested in Mobile Samsung browser and Chrome, ok
+Pause/play don't seem to work in mobile browser.
+
+
+About Excel data
+First row should contain header "Phrases"
+Data begins at second row.
+
+To convert the excel data to 'data.js'
+Visit https://www.beautifyconverter.com/excel-to-json-converter.php
+After conversion, rename the file to data.js
+Open data.js add the following prefix 
+mywd=
+
+
+
+Original data.js
+{
+    "Sheet1": [
+        {
+            "Phrases":
+
+After adding became:
+
+
+mywd={
+    "Sheet1": [
+        {
+            "Phrases":
