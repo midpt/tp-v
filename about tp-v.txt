@@ -6,6 +6,15 @@ Purpose is to randomly speak TP words (998 of them)
 
 Put on headphone, click "Play Embedded"
 
+It will randomly chose a word-phrase and speak out
+
+User can tap  on the Centre box to 
+to listen directly.
+
+User can also paste their own text into the third box.
+However each paragraph must be separated with a blank line.
+
+
 Tested in Mobile Samsung browser and Chrome, ok
 Pause/play don't seem to work in mobile browser.
 
