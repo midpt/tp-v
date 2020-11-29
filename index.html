@@ -318,6 +318,18 @@ Click (or tap) "Play Pasted" button.
 			  // console.log("found chinese");
 			}		 
 		}
+		
+		      var radn= Math.floor(Math.random() * phtotal);
+			  
+			  var mp3index=radn+1;
+			  
+			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			  var srcres="mp3/"+mp3index+".mp3";
+			   document.getElementById("audiosource").setAttribute("src", srcres);
+			  
+			  
+			  
+
 	  }
        //-------------end availVoiceEnable()-----	
 
