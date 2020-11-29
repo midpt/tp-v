@@ -232,7 +232,7 @@ Click (or tap) "Play Pasted" button.
 		 var lastUserVoiceSel="";
 		 phtotal=mywd.Sheet1.length; //mywd & Sheet1 is defined in  data.js file
                  		 
-alert("total phrases="+phtotal);		 
+//alert("total phrases="+phtotal);		 
 		 
 		 
 		 e1 = document.getElementById("shw1"); 
@@ -377,7 +377,7 @@ alert("total phrases="+phtotal);
 			  var scrollAmt=(40)*radn
 			  var txt=mywd.Sheet1[radn].a
 			  ispaused=false;
-			  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
                clearTimeout(embedTimeObj); 
@@ -390,6 +390,7 @@ alert("total phrases="+phtotal);
 			   // responsiveVoice.speak(txt, curVoice); //mobile  onend not working
 			   var srcres="mp3/"+radn+".mp3";
 			   document.getElementsById("audiosource").setAttribute("src", srcres);
+			   alert("srcres="+srcres)
                media.play();			   
 			   
 			}		   
@@ -517,7 +518,7 @@ alert("total phrases="+phtotal);
 		  var txt=s[radn];
 	     // responsiveVoice.speak(txt);
 		  ispaused=false;
-		  responsiveVoice.speak(txt, curVoice, {onend: pasteSpkEnd});
+		// responsiveVoice.speak(txt, curVoice, {onend: pasteSpkEnd});
 	                
 	  }           
 	                     
