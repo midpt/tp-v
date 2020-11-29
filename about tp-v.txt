@@ -19,6 +19,27 @@ Tested in Mobile Samsung browser and Chrome, ok
 Pause/play don't seem to work in mobile browser.
 
 
+To convert Excel Column A data to json, go to folder
+D:\wbattest\ExcelColToJson
+Run ExcelColAToJson.wbt
+
+After conversion, to use in Javascript, you have to change the extension to .js and import it like so:
+
+<script type="text/javascript" src="ExcelJson.js"></script> 
+
+To call the data in row 1 in Javascript: mywd.Sheet1[0].a 
+To call the data in row 2 in Javascript: mywd.Sheet1[1].a 
+
+
+
+
+
+
+
+
+ignore below
+
+================================
 About Excel data
 First row should contain header "Phrases"
 Data begins at second row.
@@ -28,6 +49,10 @@ Visit https://www.beautifyconverter.com/excel-to-json-converter.php
 After conversion, rename the file to data.js
 Open data.js add the following prefix 
 mywd=
+
+-----------------------
+This site convert excel without the need to have a header row
+http://beautifytools.com/excel-to-json-converter.php
 
 
 

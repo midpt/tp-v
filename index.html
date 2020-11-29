@@ -53,7 +53,7 @@
 	                               
 	</style>
                       
-	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="ExcelJson.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	<!-- clusterize js  is to create a smooth scroll div with many div row 10,000 no problem   -->
@@ -146,8 +146,27 @@ Let the sound of the words inject life to you.
               
 	                
 	<br><br> 
-                 
-                                                                                                           
+
+	
+<div class="player">
+  <audio controls>
+    <source id="audiosource" class="audiosource" src="mp3/3.mp4" type="audio/mpeg">
+     <!-- fallback content here -->
+  </audio>
+  <div class="controls">
+    <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+    <button class="stop" data-icon="S" aria-label="stop"></button>
+    <div class="timer">
+      <div></div>
+      <span aria-label="timer">00:00</span>
+    </div>
+    <button class="rwd" data-icon="B" aria-label="rewind"></button>
+    <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+  </div>
+</div>	
+	
+	
+	
     
 	<p id="shw1" class="shw1">Click 'Play Embedded'</p>
 	<p id="shw2" class="shw2"></p>
@@ -185,6 +204,20 @@ Click (or tap) "Play Pasted" button.
   </body>
   
   	<script>
+	const media = document.querySelector('audio');
+	const controls = document.querySelector('.controls');
+
+	const play = document.querySelector('.play');
+	const stop = document.querySelector('.stop');
+	const rwd = document.querySelector('.rwd');
+	const fwd = document.querySelector('.fwd');
+
+	const timerWrapper = document.querySelector('.timer');
+	const timer = document.querySelector('.timer span');
+	const timerBar = document.querySelector('.timer div');
+
+	
+	
 	     var phtotal=0, e1=0, e2=0, rnum=0;
 		 var wd30char = []; // save all word-phrase first 30 chars to be displayed using clusterize.js 
 		 var str1=" ";
@@ -200,15 +233,22 @@ Click (or tap) "Play Pasted" button.
 		 var lastUserVoiceSel="";
 		 phtotal=mywd.Sheet1.length; //mywd & Sheet1 is defined in  data.js file
 		 
+alert("total phrases="+phtotal);		 
+		 
+		 
 		 e1 = document.getElementById("shw1"); 
 		 e2 = document.getElementById("shw2"); 
          rnum= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 	    //phtotal=mywd.Sheet1.length;
 	     rnum= Math.floor(Math.random() * phtotal);
-                              
+                         
+
+
+
+						 
 		  //---create 1000 (from data.js) div row using clusterize.js library
 		 for (n=0;n<phtotal;n++){
-		     var subs=mywd.Sheet1[n].Phrases.substr(0,30) ;
+		     var subs=mywd.Sheet1[n].a.substr(0,30) ;
 			 //  class='scrollable-item' is added to allow it to be scroll to the line we want
 			 //  if you are not interested to programatically scroll to the text, can ignore the class
 			// subs='<div class="scrollable-item">'+n+') '+subs+'</div>';
@@ -334,9 +374,9 @@ Click (or tap) "Play Pasted" button.
 		 //---user click at the 30 chars text box
 		  if (!clusterClicked){
 			  var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
-			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
+			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
 			  var scrollAmt=(40)*radn
-			  var txt=mywd.Sheet1[radn].Phrases
+			  var txt=mywd.Sheet1[radn].a
 			  ispaused=false;
 			  responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
 		  			  
@@ -344,11 +384,15 @@ Click (or tap) "Play Pasted" button.
                clearTimeout(embedTimeObj); 
 			   
                var radn=inx;
-			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].Phrases;
+			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
 			   //clusterClicked=false;
-			   var txt=mywd.Sheet1[radn].Phrases
+			   var txt=mywd.Sheet1[radn].a
 			   ispaused=false;
-			    responsiveVoice.speak(txt, curVoice); //mobile  onend not working
+			   // responsiveVoice.speak(txt, curVoice); //mobile  onend not working
+			   var srcres="mp3/"+radn+".mp3";
+			   document.getElementsById("audiosource").setAttribute("src", srcres);
+               media.play();			   
+			   
 			}		   
 		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
               	     	  
@@ -356,7 +400,7 @@ Click (or tap) "Play Pasted" button.
 		 // console.log('.scrollable-item:eq('+radn+')');
 		 // $('.clusterize-scroll').scrollDivToElement('.scrollable-item:eq('+radn+')');
 		     
-		//  var txt=mywd.Sheet1[radn].Phrases
+		//  var txt=mywd.Sheet1[radn].a
 	      //responsiveVoice.speak(txt);
 		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
           // responsiveVoice.speak(txt, 'UK English Female');//work in mobile
@@ -392,7 +436,7 @@ Click (or tap) "Play Pasted" button.
 		 inx=parseInt(inxs);
 		 console.log("inx="+inx);
 		 clusterClicked=true;
-		// var txt=mywd.Sheet1[inx].Phrases
+		// var txt=mywd.Sheet1[inx].a
 		// responsiveVoice.cancel();
 		// responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
            embedSpk();
