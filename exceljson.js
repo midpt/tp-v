@@ -378,8 +378,8 @@ mywd={
         },
 
         { 
-          "a": "Ocean is a treasure chest of resources. 
-Ocean is a place to become one with creation.
+          "a": "Ocean is a treasure chest of resources.\n 
+Ocean is a place to become one with creation.\n
 Ocean is a place to offer devotion and make conditions."
         },
 
