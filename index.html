@@ -139,7 +139,7 @@ Let the sound of the words inject life to you.
                                      
   
 	<br/><br>
-    <input onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Play Embedded' />
+    <input onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Random loop' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='&#9654 Play Pasted' />
  <!--   <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='&#9209' />   -->
  <!-- 	<input id="spkPause" onclick="spkPause();" type='button' value='&#9199' />     -->
@@ -167,7 +167,7 @@ Let the sound of the words inject life to you.
 	
 	
     
-	<p id="shw1" class="shw1">Click 'Play Embedded'</p>
+	<p id="shw1" class="shw1">Click 'Random loop'</p>
 	<p id="shw2" class="shw2"></p>
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	
@@ -241,8 +241,12 @@ Click (or tap) "Play Pasted" button.
 	    //phtotal=mywd.Sheet1.length;
 	     rnum= Math.floor(Math.random() * phtotal);
                          
+		 document.getElementById("us_").style.visibility ="hidden";
+		 document.getElementById("uk_").style.visibility ="hidden";
+		 document.getElementById("chinese_").style.visibility ="hidden";
+		 document.getElementById("editTA").style.visibility ="hidden";
 
-
+    
 
 						 
 		  //---create 1000 (from data.js) div row using clusterize.js library
