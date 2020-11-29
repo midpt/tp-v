@@ -65,7 +65,7 @@
 	  document.execCommand("defaultParagraphSeparator", false, "br");
 	  $(document).ready(function() {
 	    document.getElementById("playpasted").style.visibility = "hidden"; 
-		document.getElementById("spkStop").style.visibility = "hidden"
+		//document.getElementById("spkStop").style.visibility = "hidden"
 		document.getElementById("us").style.visibility = "hidden"
 		document.getElementById("us_").style.visibility = "hidden"
 		document.getElementById("uk").style.visibility = "hidden"
@@ -141,8 +141,8 @@ Let the sound of the words inject life to you.
 	<br/><br>
     <input onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Play Embedded' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='&#9654 Play Pasted' />
-    <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='&#9209' />
-	<input id="spkPause" onclick="spkPause();" type='button' value='&#9199' />
+ <!--   <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='&#9209' />   -->
+ <!-- 	<input id="spkPause" onclick="spkPause();" type='button' value='&#9199' />     -->
               
 	                
 	<br><br> 
@@ -365,7 +365,7 @@ Click (or tap) "Play Pasted" button.
 	     	  
                                                                                                                                                                                                
 		  
-		  document.getElementById("spkStop").style.visibility = "visible";
+		 // document.getElementById("spkStop").style.visibility = "visible";
 
 		 e1 = document.getElementById("shw1"); 
 		 //e2 = document.getElementById("shw2"); 
