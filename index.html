@@ -378,7 +378,8 @@ Click (or tap) "Play Pasted" button.
 			  var txt=mywd.Sheet1[radn].a
 			  ispaused=false;
 			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
-			   document.getElementsById("audiosource").setAttribute("src", srcres);
+			  
+			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   alert("srcres="+srcres)
                media.play();			  
 		  			  
@@ -392,7 +393,7 @@ Click (or tap) "Play Pasted" button.
 			   ispaused=false;
 			   // responsiveVoice.speak(txt, curVoice); //mobile  onend not working
 			   var srcres="mp3/"+radn+".mp3";
-			   document.getElementsById("audiosource").setAttribute("src", srcres);
+			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   alert("srcres="+srcres)
                media.play();			   
 	   		   
