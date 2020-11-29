@@ -378,6 +378,9 @@ Click (or tap) "Play Pasted" button.
 			  var txt=mywd.Sheet1[radn].a
 			  ispaused=false;
 			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			   document.getElementsById("audiosource").setAttribute("src", srcres);
+			   alert("srcres="+srcres)
+               media.play();			  
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
                clearTimeout(embedTimeObj); 
