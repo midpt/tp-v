@@ -337,12 +337,13 @@ Click (or tap) "Play Pasted" button.
 			contEmbedSpk();
 			
 		  };	  
-		     
+	  	     
 	  media.addEventListener("ended", function() 
-        {
+        {  
+		  media.currentTime = 0;
           contEmbedSpk();
        });		  
-   	             
+   	               
 	  function embedSpk(){
 	      responsiveVoice.cancel();
 		  curVoice="US English Female";
