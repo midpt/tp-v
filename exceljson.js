@@ -382,7 +382,7 @@ mywd={
 Ocean is a place to become one with creation.\n
 Ocean is a place to offer devotion and make conditions."
         },
-
+  
         { 
           "a": "Nobody understands the philosophy of love more than I do."
         },
