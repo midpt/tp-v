@@ -266,8 +266,7 @@ mywd={
         },
 
         { 
-          "a": "It is heaven\'s principle that people bow their heads in front of a good person who takes responsibility for them. 
-"
+          "a": "It is heaven\'s principle that people bow their heads in front of a good person who takes responsibility for them.  "
         },
 
         { 
@@ -379,9 +378,7 @@ mywd={
         },
 
         { 
-          "a": "Ocean is a treasure chest of resources. 
-Ocean is a place to become one with creation.
-Ocean is a place to offer devotion and make conditions."
+          "a": "Ocean is a treasure chest of resources.  Ocean is a place to become one with creation. Ocean is a place to offer devotion and make conditions."
         },
 
         { 
