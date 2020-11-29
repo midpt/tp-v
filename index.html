@@ -377,10 +377,13 @@ Click (or tap) "Play Pasted" button.
 			  var scrollAmt=(40)*radn
 			  var txt=mywd.Sheet1[radn].a
 			  ispaused=false;
+			  var mp3index=radn+1;
+			  
 			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
-			  var srcres="mp3/"+radn+".mp3";
+			  var srcres="mp3/"+mp3index+".mp3";
 			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   //alert("srcres="+srcres)
+			   console.log("radn="+radn+"  mp3index="+mp3index);
                media.play();			  
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
@@ -392,9 +395,13 @@ Click (or tap) "Play Pasted" button.
 			   var txt=mywd.Sheet1[radn].a
 			   ispaused=false;
 			   // responsiveVoice.speak(txt, curVoice); //mobile  onend not working
-			   var srcres="mp3/"+radn+".mp3";
+			  var mp3index=radn+1;
+			  
+			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			  var srcres="mp3/"+mp3index+".mp3";
 			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   //alert("srcres="+srcres)
+			   console.log("radn="+radn+"  mp3index="+mp3index);
                media.play();			   
 	           	      	         
 			}	               	   
