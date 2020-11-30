@@ -509,22 +509,23 @@ Click (or tap) "Play Pasted" button.
 	  //--------end function embedSpk------------------                
  	    
       function spkPause()		{
-             if (responsiveVoice.isPlaying()){
-			    if (!ispaused){
-			      console.log('isplaying so pause it.');
-			      responsiveVoice.pause();
-				  ispaused=true;
-				 }else{ // ispaused=true
+            // if (responsiveVoice.isPlaying()){
+			 //   if (!ispaused){
+			 //     console.log('isplaying so pause it.');
+			 //     responsiveVoice.pause();
+			//	  ispaused=true;
+			//	 }else{ // ispaused=true
 			 
-			      console.log('not playing'); 
-				  responsiveVoice.resume();
-				  ispaused=false;
-				}
-			}	  
+			  //    console.log('not playing'); 
+			//	  responsiveVoice.resume();
+			//	  ispaused=false;
+			//	}
+			//}	
+         media.stop();			
 	  
 	  }
       //-------------end spkPause()--------------
-                            
+                              
       	  
       function clusterTxtGet(){
 	    var res=event.srcElement.innerHTML;
