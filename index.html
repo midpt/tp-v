@@ -153,11 +153,11 @@ Let the sound of the words inject life to you.
      <!-- fallback content here -->
   </audio>
   <div class="controls" >
-		<button class="play" id="play" onclick="playAudioClicked()" data-icon="P" aria-label="play pause toggle"></button>
-		<button class="stop" data-icon="S" aria-label="stop"></button>
+		<button style="font-size: 12px;" class="play" id="play" onclick="playAudioClicked()" data-icon="P" aria-label="play pause toggle"></button>
+		<button style="font-size: 12px;" class="stop" data-icon="S" aria-label="stop"></button>
 
-		<button class="rwd" data-icon="B" aria-label="rewind"></button>
-		<button class="fwd" data-icon="F" aria-label="fast forward"></button>
+		<button style="font-size: 12px;" class="rwd" data-icon="B" aria-label="rewind"></button>
+		<button style="font-size: 12px;" class="fwd" data-icon="F" aria-label="fast forward"></button>
   </div>
   
 </div>	
@@ -357,16 +357,16 @@ Click (or tap) "Play Pasted" button.
       } 
 
 		//var element = document.getElementById('play');
-		play.addEventListener("click", function(e) {
+	//	play.addEventListener("click", function(e) {
 			
-		    console.log("Detected Play clicked   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
-          if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-		  if (playcnt<2)playcnt ++;
-	      clusterClicked=false;
-		    console.log("Detected Play clicked . After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+	//	    console.log("Detected Play clicked   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+     //     if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+	//	  if (playcnt<2)playcnt ++;
+	 //     clusterClicked=false;
+	//	    console.log("Detected Play clicked . After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
   			
 			
-		}, false);
+	//	}, false);
 
 	                    
 	                            
@@ -389,7 +389,7 @@ Click (or tap) "Play Pasted" button.
 	  media.addEventListener("ended", function() 
         {  
 		  media.currentTime = 0;
-          if (clusterClicked==false){
+           if (clusterClicked==false){
 		     contEmbedSpk();
 			  console.log("media.addEventListener ended.   clusterClicked==false");
 			 }else{
