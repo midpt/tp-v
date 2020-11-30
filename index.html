@@ -214,7 +214,7 @@ Click (or tap) "Play Pasted" button.
 	const timerBar = document.querySelector('.timer div');
 
 	
-	
+		 var radn_glb=0;
 	     var phtotal=0, e1=0, e2=0, rnum=0;
 		 var wd30char = []; // save all word-phrase first 30 chars to be displayed using clusterize.js 
 		 var str1=" ";
@@ -321,7 +321,7 @@ Click (or tap) "Play Pasted" button.
 		
 		     // document.getElementById("ranloop").style.visibility ="hidden";
 		      var radn= Math.floor(Math.random() * phtotal);
-			  
+			  radn_glb=radn;
 			  var mp3index=radn+1;
 			  
 			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
@@ -363,7 +363,7 @@ Click (or tap) "Play Pasted" button.
 
 	  media.addEventListener("playing", function() 
         {  
-			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a; //display the corresponding text for audio
+			   e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
 
        });	
 	     
