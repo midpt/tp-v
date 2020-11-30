@@ -2354,7 +2354,7 @@
         },
 
         { 
-          "a": "Do the belly button exercise. Every vital point in your body is hidden. They are set in deep. If you press those points, you can connect to your body\'s original and strong qi energy. The navel is the most deeply set point on your body. That\'s why all the important nerves are connected there. When you wake up in the morning, before you do other exercises, ?rst ?ex your abdomen strongly. Push your navel outward so your deeply set abdomen protrudes. When you do so, you can revitalize all the cells that are blocked by germs."
+          "a": "Do the belly button exercise. Every vital point in your body is hidden. They are set in deep. If you press those points, you can connect to your body\'s original and strong qi energy. The navel is the most deeply set point on your body. That\'s why all the important nerves are connected there. When you wake up in the morning, before you do other exercises, first flex your abdomen strongly. Push your navel outward so your deeply set abdomen protrudes. When you do so, you can revitalize all the cells that are blocked by germs."
         },
 
         { 
