@@ -356,8 +356,8 @@ Click (or tap) "Play Pasted" button.
    
       } 
 
-		var element = document.getElementById('play');
-		element.addEventListener("click", function(e) {
+		//var element = document.getElementById('play');
+		play.addEventListener("click", function(e) {
 			
 		    console.log("Detected Play clicked   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
           if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
@@ -368,7 +368,7 @@ Click (or tap) "Play Pasted" button.
 			
 		}, false);
 
-	        
+	             
 	                          
        //  embed refer to random loop
       function contEmbedSpk(){
