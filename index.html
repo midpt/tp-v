@@ -524,9 +524,12 @@ Click (or tap) "Play Pasted" button.
            if (ispaused==false) {
 		     media.pause();	
              ispaused=true; 
+			  console.log("ispause="+ispaused)
 			}else{
-                 media.pause();
+                 media.play();
+				 
 				 ispaused=false 
+				 console.log("ispause="+ispaused);
 			}			
 	  
 	  }
