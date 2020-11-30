@@ -521,8 +521,13 @@ Click (or tap) "Play Pasted" button.
 			//	  ispaused=false;
 			//	}
 			//}	
-         media.pause();	
-          ispaused=true;  		 
+           if (ispaused==false) {
+		     media.pause();	
+             ispaused=true; 
+			}else{
+                 media.pause();
+				 ispaused=false 
+			}			
 	  
 	  }
       //-------------end spkPause()--------------
