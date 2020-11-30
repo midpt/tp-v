@@ -1,4 +1,4 @@
-﻿mywd={
+mywd={
      "Sheet1": [
 
         { 
