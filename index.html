@@ -343,7 +343,7 @@ Click (or tap) "Play Pasted" button.
 	  }
 	        
 	       
-  
+       //  embed refer to random loop
       function contEmbedSpk(){
 	    embedTimeObj=setTimeout(function(){  embedSpk(); }, 2000);
 	     //embedSpk();  
@@ -364,8 +364,11 @@ Click (or tap) "Play Pasted" button.
 
 	  media.addEventListener("playing", function() 
         {  
-			if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-			if (playcnt<2)playcnt ++;
+		    if (clusterClicked==false){
+			   if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+			   if (playcnt<2)playcnt ++;
+			
+			}
        });	
 	       
    	                                 
