@@ -359,7 +359,14 @@ Click (or tap) "Play Pasted" button.
         {  
 		  media.currentTime = 0;
           contEmbedSpk();
-       });		  
+       });	
+
+	  media.addEventListener("playing", function() 
+        {  
+			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a; //display the corresponding text for audio
+
+       });	
+	   
    	                         
 	  function embedSpk(){
 	      responsiveVoice.cancel();
@@ -416,7 +423,7 @@ Click (or tap) "Play Pasted" button.
                clearTimeout(embedTimeObj); 
 		    
                var radn=inx;
-			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
+			   e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a; //display the corresponding text for audio
 			   //clusterClicked=false;
 			   var txt=mywd.Sheet1[radn].a
 			   ispaused=false;
