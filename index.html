@@ -64,7 +64,7 @@
 	  //---not used
 	  document.execCommand("defaultParagraphSeparator", false, "br");
 	  $(document).ready(function() {
-	    document.getElementById("playpasted").style.visibility = "hidden"; 
+	   // document.getElementById("playpasted").style.visibility = "hidden"; 
 		//document.getElementById("spkStop").style.visibility = "hidden"
 		document.getElementById("us").style.visibility = "hidden"
 		document.getElementById("us_").style.visibility = "hidden"
@@ -78,7 +78,7 @@
 	    //----Detect user input into textarea
 		$("#editTA").change(function() {
 		   //alert('Textarea is changed');
-		   document.getElementById("playpasted").style.visibility = "visible"; 
+		  // document.getElementById("playpasted").style.visibility = "visible"; 
 		   var sh2=document.getElementById("shw2");
  
 
@@ -139,13 +139,13 @@ Let the sound of the words inject life to you.
                                        
   
 	<br/><br>
-    <input id="ranloop" onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Random loop' />
-    <input id="playpasted" onclick="pasteSpk();" type='button' value='&#9654 Play Pasted' />
+<!--    <input id="ranloop" onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Random loop' />   -->
+ <!--    <input id="playpasted" onclick="pasteSpk();" type='button' value='&#9654 Play Pasted' />   -->
  <!--   <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='&#9209' />   -->
  <!-- 	<input id="spkPause" onclick="spkPause();" type='button' value='&#9199' />     -->
                   
  	                
-	<br><br> 
+
         
 <div class="player">
   <audio id="audiosource" class="audiosource"  controls  >
@@ -231,7 +231,7 @@ Click (or tap) "Play Pasted" button.
 		 var lastUserVoiceSel="";
 		 phtotal=mywd.Sheet1.length; //mywd & Sheet1 is defined in  data.js file
 
-		 document.getElementById("ranloop").style.visibility ="hidden";
+		 //document.getElementById("ranloop").style.visibility ="hidden";
 
 	   	      
 //alert("total phrases="+phtotal);		 
@@ -320,7 +320,7 @@ Click (or tap) "Play Pasted" button.
 			}		 
 		}
 		
-		      document.getElementById("ranloop").style.visibility ="hidden";
+		     // document.getElementById("ranloop").style.visibility ="hidden";
 		      var radn= Math.floor(Math.random() * phtotal);
 			  
 			  var mp3index=radn+1;
