@@ -346,6 +346,7 @@ Click (or tap) "Play Pasted" button.
 	  //---detect user click the Audio Play button
 	  function playAudioClicked(){
 	       audioPlayBtnClicked=true;
+		   clusterClicked=false;
            if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
 			if (playcnt<2)playcnt ++;
 
@@ -360,6 +361,7 @@ Click (or tap) "Play Pasted" button.
 	  function embedSpkEnd() {
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
+
 			contEmbedSpk();
 			
 		  };	  
@@ -367,10 +369,10 @@ Click (or tap) "Play Pasted" button.
 	  media.addEventListener("ended", function() 
         {  
 		  media.currentTime = 0;
-          if (audioPlayBtnClicked==false){
+          if (clusterClicked==false){
 		     contEmbedSpk();
 			 }else{
-			  audioPlayBtnClicked=false;
+			  
 			 }
        });	
    
