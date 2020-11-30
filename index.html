@@ -60,6 +60,7 @@
 	<script src='clusterize.min.js'></script>
 	<script>
 	 var ispaused=false;
+	 var playcnt=0;
 	  //----This ensure that when people hit a return key, they insert br element
 	  //---not used
 	  document.execCommand("defaultParagraphSeparator", false, "br");
@@ -363,8 +364,8 @@ Click (or tap) "Play Pasted" button.
 
 	  media.addEventListener("playing", function() 
         {  
-			   e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-
+			if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+			playcnt ++;
        });	
 	     
    	                             
