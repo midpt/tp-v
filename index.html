@@ -356,19 +356,24 @@ Click (or tap) "Play Pasted" button.
    
       } 
 
-		var element = document.getElementById('audiosource');
-		element.addEventListener("click", function(e) {
+	//	var element = document.getElementById('audiosource');
+	//	element.addEventListener("click", function(e) {
 			
-		    console.log("Detected audiosource Play clicked   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
-          if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-		  if (playcnt<2)playcnt ++;
-	      clusterClicked=false;
-		    console.log("Detected audiosource Play clicked . After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+	//	    console.log("Detected audiosource Play clicked   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+     //     if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+	//	  if (playcnt<2)playcnt ++;
+	  //    clusterClicked=false;
+	//	    console.log("Detected audiosource Play clicked . After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
   			
 			
-		}, false);
+		//}, false);
 
-	                              
+	if (window.addEventListener){
+		(function(){
+			function playfunc(){console.log('window event play detected.');}
+			document.getElementById('audiosource').addEventListener('play', playfunc, false);
+		})();
+	}	                              
 	                            
        //  embed refer to random loop
       function contEmbedSpk(){
