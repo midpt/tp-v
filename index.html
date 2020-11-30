@@ -351,9 +351,10 @@ Click (or tap) "Play Pasted" button.
 			if (playcnt<2)playcnt ++;
 
       }      
-	                       
+	                        
        //  embed refer to random loop
       function contEmbedSpk(){
+		 console.log("inside contEmbedSpk(). About to call setTimeout embedSpk();");
 	    embedTimeObj=setTimeout(function(){  embedSpk(); }, 2000);
 	     //embedSpk();  
 
@@ -361,8 +362,9 @@ Click (or tap) "Play Pasted" button.
 	  function embedSpkEnd() {
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
+			  console.log("inside embedSpkEnd(). About to call contEmbedSpk();");
 
-			contEmbedSpk();
+			  contEmbedSpk();
 			
 		  };	  
 	  	     
@@ -371,7 +373,9 @@ Click (or tap) "Play Pasted" button.
 		  media.currentTime = 0;
           if (clusterClicked==false){
 		     contEmbedSpk();
+			  console.log("media.addEventListener ended.   clusterClicked==false");
 			 }else{
+			  console.log("media.addEventListener ended.   clusterClicked==true");
 			  
 			 }
        });	
@@ -381,7 +385,8 @@ Click (or tap) "Play Pasted" button.
 		   // if (clusterClicked==false){
 			//   if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
 			//   if (playcnt<2)playcnt ++;
-			
+				  console.log("media.addEventListener playing");
+		
 			//}
        });	
 	                                                           
@@ -389,6 +394,8 @@ Click (or tap) "Play Pasted" button.
 	      responsiveVoice.cancel();
 		  curVoice="US English Female";
 		 //phtotal=mywd.Sheet1.length;
+		  console.log("inside embedSpk(). ");
+
 		  if (pasteTimeObj) {
             clearTimeout(pasteTimeObj);
             pasteTimeObj = 0;
@@ -422,6 +429,8 @@ Click (or tap) "Play Pasted" button.
 	   	 
 		 //---user click at the 30 chars text box
 		  if (!clusterClicked){
+		      console.log("inside embedSpk().  !clusterClicked");
+
 			  var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
 			  var scrollAmt=(40)*radn
@@ -437,6 +446,8 @@ Click (or tap) "Play Pasted" button.
                media.play();			  
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
+		   		console.log("inside embedSpk().  clusterClicked=true");
+
                clearTimeout(embedTimeObj); 
 		    
                var radn=inx;
@@ -497,6 +508,7 @@ Click (or tap) "Play Pasted" button.
 		 inx=parseInt(inxs);
 		 console.log("inx="+inx);
 		 clusterClicked=true;
+		 console.log('inside clusterTxtGet(). About to call embedSpk();');
 		// var txt=mywd.Sheet1[inx].a
 		// responsiveVoice.cancel();
 		// responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
