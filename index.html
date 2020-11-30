@@ -229,6 +229,7 @@ Click (or tap) "Play Pasted" button.
 		 var embedTimeObj=0;
 		 var pasteTimeObj=0;
 		 var lastUserVoiceSel="";
+		 var audioPlayBtnClicked=0;
 		 phtotal=mywd.Sheet1.length; //mywd & Sheet1 is defined in  data.js file
 
 		 //document.getElementById("ranloop").style.visibility ="hidden";
@@ -344,6 +345,7 @@ Click (or tap) "Play Pasted" button.
 	  
 	  //---detect user click the Audio Play button
 	  function playAudioClicked(){
+	       audioPlayBtnClicked=true;
            if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
 			if (playcnt<2)playcnt ++;
 
@@ -365,7 +367,11 @@ Click (or tap) "Play Pasted" button.
 	  media.addEventListener("ended", function() 
         {  
 		  media.currentTime = 0;
-          contEmbedSpk();
+          if (audioPlayBtnClicked==false){
+		     contEmbedSpk();
+			 }else{
+			  audioPlayBtnClicked=false;
+			 }
        });	
 
 	  media.addEventListener("playing", function() 
