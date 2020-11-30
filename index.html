@@ -133,13 +133,13 @@ Let the sound of the words inject life to you.
 </span></div>
 <br>
 <div class="wordart slate"><span class="text">
-&nbsp; &nbsp; &nbsp;  Click 'Random loop' to start.
+&nbsp; &nbsp; &nbsp;  Click 'Play' button.
 </span></div>
     
                                        
   
 	<br/><br>
-    <input onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Random loop' />
+    <input id="ranloop" onclick="clusterClicked=false;embedSpk();" type='button' value='&#9654 Random loop' />
     <input id="playpasted" onclick="pasteSpk();" type='button' value='&#9654 Play Pasted' />
  <!--   <input id="spkStop" onclick="responsiveVoice.cancel();" type='button' value='&#9209' />   -->
  <!-- 	<input id="spkPause" onclick="spkPause();" type='button' value='&#9199' />     -->
@@ -317,6 +317,7 @@ Click (or tap) "Play Pasted" button.
 			}		 
 		}
 		
+		      document.getElementById("ranloop").style.visibility ="hidden";
 		      var radn= Math.floor(Math.random() * phtotal);
 			  
 			  var mp3index=radn+1;
