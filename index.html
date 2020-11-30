@@ -153,7 +153,7 @@ Let the sound of the words inject life to you.
      <!-- fallback content here -->
   </audio>
   <div class="controls" >
-		<button class="play" data-icon="P" aria-label="play pause toggle"></button>
+		<button class="play" onclick="playAudioClicked()" data-icon="P" aria-label="play pause toggle"></button>
 		<button class="stop" data-icon="S" aria-label="stop"></button>
 
 		<button class="rwd" data-icon="B" aria-label="rewind"></button>
@@ -341,7 +341,13 @@ Click (or tap) "Play Pasted" button.
 	  function MMenu()	 {
 	  
 	  }
-	        
+	  
+	  //---detect user click the Audio Play button
+	  function playAudioClicked(){
+           if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+			if (playcnt<2)playcnt ++;
+
+      }      
 	       
        //  embed refer to random loop
       function contEmbedSpk(){
@@ -364,11 +370,11 @@ Click (or tap) "Play Pasted" button.
 
 	  media.addEventListener("playing", function() 
         {  
-		    if (clusterClicked==false){
-			   if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-			   if (playcnt<2)playcnt ++;
+		   // if (clusterClicked==false){
+			//   if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+			//   if (playcnt<2)playcnt ++;
 			
-			}
+			//}
        });	
 	            
    	                                    
