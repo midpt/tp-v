@@ -346,10 +346,15 @@ Click (or tap) "Play Pasted" button.
 	  //---detect user click the Audio Play button
 	  function playAudioClicked(){
 	       audioPlayBtnClicked=true;
-		   clusterClicked=false;
-           if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-			if (playcnt<2)playcnt ++;
-
+		    console.log("inside playAudioClicked().   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+		   
+          if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
+		  if (playcnt<2)playcnt ++;
+	      clusterClicked=false;
+		    console.log("inside playAudioClicked(). After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+		  
+	  	   
+ 
       }      
 	                        
        //  embed refer to random loop
