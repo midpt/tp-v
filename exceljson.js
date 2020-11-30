@@ -1,4 +1,4 @@
-mywd={
+ï»¿mywd={
      "Sheet1": [
 
         { 
@@ -14,7 +14,7 @@ mywd={
         },
 
         { 
-          "a": "If people from the former Soviet Union and America intermarried, they would be registered in the kingdom of God within thirty minutes. It is that simple. Wait and see if that is true or not. See if that comes true or not in the victorious realm of True Parents. When the Abel UN and the Cain UN come under the dominion of God, within seconds the world will change into the world God has wished for. "
+          "a": "If people from the former Soviet Union and America intermarried, they would be registered in the kingdom of God within thirty minutes. It is that simple. Wait and see if that is true or not. See if that comes true or not in the victorious realm of True Parents. When the Abel UN and the Cain UN come under the dominion of God, within seconds the world will change into the world God has wished for. "
         },
 
         { 
@@ -118,7 +118,7 @@ mywd={
         },
 
         { 
-          "a": "You did not know it, but God\'s providential will shall rise and expand its borders from now on, while the borders of the satanic world will retreat. You should be aware that we have crossed the halfway point in this world.... "
+          "a": "You did not know it, but God\'s providential will shall rise and expand its borders from now on, while the borders of the satanic world will retreat. You should be aware that we have crossed the halfway point in this world.... "
         },
 
         { 
@@ -254,7 +254,7 @@ mywd={
         },
 
         { 
-          "a": "If we were to turn the globe so that Korea was at the North Pole, then where would the South Pole be?  Which of those countries would correspond to the South Pole? Buy a world map that places Korea at the center and put it on the wall in this room. "
+          "a": "If we were to turn the globe so that Korea was at the North Pole, then where would the South Pole be? Which of those countries would correspond to the South Pole? Buy a world map that places Korea at the center and put it on the wall in this room. "
         },
 
         { 
@@ -298,7 +298,7 @@ mywd={
         },
 
         { 
-          "a": "Since Jesus truly forgave those who put him on the cross, the history of Christianity could exist. In this world is there anybody who can say \'I am not a sinner.\'? Without forgiveness, who can go to the door to Heaven?  "
+          "a": "Since Jesus truly forgave those who put him on the cross, the history of Christianity could exist. In this world is there anybody who can say \'I am not a sinner.\'? Without forgiveness, who can go to the door to Heaven?  "
         },
 
         { 
@@ -362,7 +362,7 @@ mywd={
         },
 
         { 
-          "a": " It is only through you, their descendants, that they (spirit beings) can perfect themselves."
+          "a": " It is only through you, their descendants, that they (spirit beings) can perfect themselves."
         },
 
         { 
@@ -426,7 +426,7 @@ mywd={
         },
 
         { 
-          "a": "Without going through the national process, we can\'t reach a worldwide level. Without the process on a worldwide level, there can\'t be true love. Without true love, there can\'t be True Parents. "
+          "a": "Without going through the national process, we can\'t reach a worldwide level. Without the process on a worldwide level, there can\'t be true love. Without true love, there can\'t be True Parents. "
         },
 
         { 
@@ -462,7 +462,7 @@ mywd={
         },
 
         { 
-          "a": "Hell is where you don\'t embrace everyone. Heaven is where you embrace  everyone. "
+          "a": "Hell is where you don\'t embrace everyone. Heaven is where you embrace everyone. "
         },
 
         { 
@@ -490,7 +490,7 @@ mywd={
         },
 
         { 
-          "a": "No one tends to like prison inmates (Danbury), but I loved them more than anyone else ever loved them. When I make such a claim to the world, no one can dispute me. The people in the prison will testify to it. Whenever the prison served some delicious food, the inmates would bring it to me. "
+          "a": "No one tends to like prison inmates (Danbury), but I loved them more than anyone else ever loved them. When I make such a claim to the world, no one can dispute me. The people in the prison will testify to it. Whenever the prison served some delicious food, the inmates would bring it to me. "
         },
 
         { 
@@ -522,11 +522,11 @@ mywd={
         },
 
         { 
-          "a": "In Danbury Prison, I sometimes kept working at my prison chores even when lunchtime came around. When I did that, the kitchen leader came to me and said, \"It\'s lunchtime now, so quickly stop what you are doing and get something to eat.\" Such is the heart of people. He was concerned I might miss breakfast and lunch, so he came and urged me to eat the food he had prepared. Sometimes he even shared a portion of his own meal with me. People everywhere have a conscience, even in prison. If you live a life of serving others, you can make friends even in prison and they will protect you. "
+          "a": "In Danbury Prison, I sometimes kept working at my prison chores even when lunchtime came around. When I did that, the kitchen leader came to me and said, \"It\'s lunchtime now, so quickly stop what you are doing and get something to eat.\" Such is the heart of people. He was concerned I might miss breakfast and lunch, so he came and urged me to eat the food he had prepared. Sometimes he even shared a portion of his own meal with me. People everywhere have a conscience, even in prison. If you live a life of serving others, you can make friends even in prison and they will protect you. "
         },
 
         { 
-          "a": "President Reagan submitted to Congress a bill authorizing $14 million to aid the Nicaraguan Contras. However, Congress rejected it. Why do you think that, out of the 240 million people who are living in America, God would wake me up in the middle of the night in my cell in Danbury and give me an urgent command regarding this matter? He ordered me to do it right away, so I called True Mother at once. I told her that The Washington Times had to solve this problem of support for freedom. I said they had to be determined to succeed, and even stake the future of the newspaper on it. "
+          "a": "President Reagan submitted to Congress a bill authorizing $14 million to aid the Nicaraguan Contras. However, Congress rejected it. Why do you think that, out of the 240 million people who are living in America, God would wake me up in the middle of the night in my cell in Danbury and give me an urgent command regarding this matter? He ordered me to do it right away, so I called True Mother at once. I told her that The Washington Times had to solve this problem of support for freedom. I said they had to be determined to succeed, and even stake the future of the newspaper on it. "
         },
 
         { 
@@ -574,7 +574,7 @@ mywd={
         },
 
         { 
-          "a": "When you have a heart to care about others, God will come even if you tell Him not to. It is because in such a place you form a base upon which He can relate to you as His counterpart. That is why Whenever you are doing something good, God will come to you even if you ask Him not to. Wherever there is goodness, God is present. "
+          "a": "When you have a heart to care about others, God will come even if you tell Him not to. It is because in such a place you form a base upon which He can relate to you as His counterpart. That is why Whenever you are doing something good, God will come to you even if you ask Him not to. Wherever there is goodness, God is present. "
         },
 
         { 
@@ -598,11 +598,11 @@ mywd={
         },
 
         { 
-          "a": "When you are Witnessing, create an environment in which even nature desires to praise you, in which the water in the river wants to stop ?owing to praise you and the ?sh in the river want to be on your table so  you can eat them. Then the people who eat those fish will start responding to you. This is the kind of foundation you should leave behind"
+          "a": "When you are Witnessing, create an environment in which even nature desires to praise you, in which the water in the river wants to stop ?owing to praise you and the ?sh in the river want to be on your table so  you can eat them. Then the people who eat those fish will start responding to you. This is the kind of foundation you should leave behind"
         },
 
         { 
-          "a": "Once I gave them an injection of truth, even those who were on the way to hell would turn around and come back. How exhilarating! Since heaven was with us, a huge electric current was present. A strong power like a 100,000-volt current ?owed in us, and we could feel it shaking the entire world. What a delight! After  experiencing it, I could not fall asleep even if I tried. Even while sleeping, my eyes would suddenly open wide."
+          "a": "Once I gave them an injection of truth, even those who were on the way to hell would turn around and come back. How exhilarating! Since heaven was with us, a huge electric current was present. A strong power like a 100,000-volt current ?owed in us, and we could feel it shaking the entire world. What a delight! After  experiencing it, I could not fall asleep even if I tried. Even while sleeping, my eyes would suddenly open wide."
         },
 
         { 
@@ -626,7 +626,7 @@ mywd={
         },
 
         { 
-          "a": "If you want to ?ll a bowl with something new, first you have to turn it upside down so that everything is emptied out.  That is why I listened to them, putting myself in the position of enjoying what they had to say more than anyone else, even staying up all night to hear it. It is all about genuinely listening to others and then genuinely talking to them. That is the secret. That is how you give and receive."
+          "a": "If you want to ?ll a bowl with something new, first you have to turn it upside down so that everything is emptied out.  That is why I listened to them, putting myself in the position of enjoying what they had to say more than anyone else, even staying up all night to hear it. It is all about genuinely listening to others and then genuinely talking to them. That is the secret. That is how you give and receive."
         },
 
         { 
@@ -634,11 +634,11 @@ mywd={
         },
 
         { 
-          "a": "It was common for members to stay up all night praying, weeping and crying out in tears.  We need such a spirit at the church. Then something great will erupt like a volcano. In order to make this happen, you have to give lectures day and night. That is why I asked President Eu to give lectures for as much as 18 hours a day, which he did for three years and eight months."
+          "a": "It was common for members to stay up all night praying, weeping and crying out in tears.  We need such a spirit at the church. Then something great will erupt like a volcano. In order to make this happen, you have to give lectures day and night. That is why I asked President Eu to give lectures for as much as 18 hours a day, which he did for three years and eight months."
         },
 
         { 
-          "a": "Unless we achieve mind-body unity, ten years of study and practice, even 1,000 years of study and practice, will be in vain. How can we unite our mind and body? None of the great religious founders could fully teach this. I say it is God\'s true love that enables us to attain mind-body unity. Therefore, the primary issue is understanding why we have been unable to fully abide in the true love of God."
+          "a": "Unless we achieve mind-body unity, ten years of study and practice, even 1,000 years of study and practice, will be in vain. How can we unite our mind and body? None of the great religious founders could fully teach this. I say it is God\'s true love that enables us to attain mind-body unity. Therefore, the primary issue is understanding why we have been unable to fully abide in the true love of God."
         },
 
         { 
@@ -730,7 +730,7 @@ mywd={
         },
 
         { 
-          "a": "You may not know what the spirit world is at this time, because you have not experienced it. But I received special grace from heaven and became an expert with respect to the spirit world. Whenever a spiritualist came to me,  that person surrendered. Having become an expert on the spirit world, I established the Uni?cation Church, and now I am threading my way through the world."
+          "a": "You may not know what the spirit world is at this time, because you have not experienced it. But I received special grace from heaven and became an expert with respect to the spirit world. Whenever a spiritualist came to me,  that person surrendered. Having become an expert on the spirit world, I established the Uni?cation Church, and now I am threading my way through the world."
         },
 
         { 
@@ -742,7 +742,7 @@ mywd={
         },
 
         { 
-          "a": "In establishing a holy ground, I selected land where I could pray. When we were being hounded and chased out, We had no place to communicate freely with God. The fact that we now have holy grounds where we can cry out to God is historic and signi?es that we have established a base for the worldwide and historic victory. "
+          "a": "In establishing a holy ground, I selected land where I could pray. When we were being hounded and chased out, We had no place to communicate freely with God. The fact that we now have holy grounds where we can cry out to God is historic and signi?es that we have established a base for the worldwide and historic victory. "
         },
 
         { 
@@ -750,7 +750,7 @@ mywd={
         },
 
         { 
-          "a": "You must understand how much effort I made leading up to God\'s Day on January 1, 1968. God was miserable, I was miserable, Uni?cationists also were miserable.  Now that you have the responsibility to establish the foundation for the unification of Korea throughout the world, you need to pray so fervently that the rock you sit upon is moved to tears and all of nature bows its head."
+          "a": "You must understand how much effort I made leading up to God\'s Day on January 1, 1968. God was miserable, I was miserable, Uni?cationists also were miserable.  Now that you have the responsibility to establish the foundation for the unification of Korea throughout the world, you need to pray so fervently that the rock you sit upon is moved to tears and all of nature bows its head."
         },
 
         { 
@@ -782,7 +782,7 @@ mywd={
         },
 
         { 
-          "a": "A baby makes his or her parents the owners of love. It is the wife who enables her husband to be the owner of love. The object partner determines the absolute value of the subject partner. A determination of absolute value is afforded through the object partner. God originally created the cosmos in accordance with this principle, and thereby, the cosmos came to exist. "
+          "a": "A baby makes his or her parents the owners of love. It is the wife who enables her husband to be the owner of love. The object partner determines the absolute value of the subject partner. A determination of absolute value is afforded through the object partner. God originally created the cosmos in accordance with this principle, and thereby, the cosmos came to exist. "
         },
 
         { 
@@ -822,7 +822,7 @@ mywd={
         },
 
         { 
-          "a": "I am telling you to go in order to become an owner; then go in order to become true parents. You should go to completely educate the fallen world, the ignorant people. You are to go in order to complete the ideology of three subjects centering on the three loves. Who is the unity of the three subjects? It is God. Isn\'t God the Owner of owners (True Owner)?  God is the Parent of parents (True Parent). He is the root. God is the Teacher of teachers (True Teacher)."
+          "a": "I am telling you to go in order to become an owner; then go in order to become true parents. You should go to completely educate the fallen world, the ignorant people. You are to go in order to complete the ideology of three subjects centering on the three loves. Who is the unity of the three subjects? It is God. Isn\'t God the Owner of owners (True Owner)?  God is the Parent of parents (True Parent). He is the root. God is the Teacher of teachers (True Teacher)."
         },
 
         { 
@@ -830,11 +830,11 @@ mywd={
         },
 
         { 
-          "a": "The Unification Church is a religious organization. Why do we need religion on earth today? It is because we could not register in our original homeland. Therefore, we must seek a nation where we can dwell as a religious organization. From God\'s point of view, these people are not the citizens of God.  We do not yet have a nation that we have established or can register in. We have to seek such a nation and register in it we have to return to a level higher than that of the religions today. "
+          "a": "The Unification Church is a religious organization. Why do we need religion on earth today? It is because we could not register in our original homeland. Therefore, we must seek a nation where we can dwell as a religious organization. From God\'s point of view, these people are not the citizens of God.  We do not yet have a nation that we have established or can register in. We have to seek such a nation and register in it we have to return to a level higher than that of the religions today. "
         },
 
         { 
-          "a": "In my own family there were  some who stood against me. But if Christianity had embraced me, my family would never have become divided. This would have been true for the nation also.  Now I must win over the communist world on the strength of my own foundation, not the base laid by Christianity."
+          "a": "In my own family there were  some who stood against me. But if Christianity had embraced me, my family would never have become divided. This would have been true for the nation also.  Now I must win over the communist world on the strength of my own foundation, not the base laid by Christianity."
         },
 
         { 
@@ -1258,7 +1258,7 @@ mywd={
         },
 
         { 
-          "a": "It was only natural for Heungnam Prison to be a target for U.S. aerial bombing operations...  One day Jesus appeared right before me with a tearful face. This gave me a strong premonition so I shouted, \"Everyone stay within twelve meters of me!\" Soon after that a huge bomb exploded just  twelve  meters  from  where  I  stood.  The  prisoners  who  had  stayed close to me survived."
+          "a": "It was only natural for Heungnam Prison to be a target for U.S. aerial bombing operations...  One day Jesus appeared right before me with a tearful face. This gave me a strong premonition so I shouted, \"Everyone stay within twelve meters of me!\" Soon after that a huge bomb exploded just  twelve  meters  from  where  I  stood.  The  prisoners  who  had  stayed close to me survived."
         },
 
         { 
@@ -1298,7 +1298,7 @@ mywd={
         },
 
         { 
-          "a": "I declared, \"I have come to America as a fireman and a doctor. If a house catches fire, a fireman needs to come, and if someone is sick, a doctor pays a visit.\" I was like a fireman who had gone to America to extinguish the fires of immorality, and like a doctor who had gone to cure America of the illness that made it lose sight of God and go to the brink of decadence."
+          "a": "I declared, \"I have come to America as a fireman and a doctor. If a house catches fire, a fireman needs to come, and if someone is sick, a doctor pays a visit.\" I was like a fireman who had gone to America to extinguish the fires of immorality, and like a doctor who had gone to cure America of the illness that made it lose sight of God and go to the brink of decadence."
         },
 
         { 
@@ -1390,7 +1390,7 @@ mywd={
         },
 
         { 
-          "a": "The Korean peninsula is a scaled-down version of the world. If blood were shed on the Korean peninsula, it would be shed in the world. If reconciliation occurred on the peninsula, there would be reconciliation in the world. If the peninsula were unified, this would bring about unification in the world."
+          "a": "The Korean peninsula is a scaled-down version of the world. If blood were shed on the Korean peninsula, it would be shed in the world. If reconciliation occurred on the peninsula, there would be reconciliation in the world. If the peninsula were unified, this would bring about unification in the world."
         },
 
         { 
@@ -1482,7 +1482,7 @@ mywd={
         },
 
         { 
-          "a": "One individual alone maintained this relationship. While facing death, one man transcended death and placed all his hope in Jesus. That was none other than the thief on the right. You need to know that were it not for the thief on the right, Jesus would not have been able to resurrect and resume his providence on  earth."
+          "a": "One individual alone maintained this relationship. While facing death, one man transcended death and placed all his hope in Jesus. That was none other than the thief on the right. You need to know that were it not for the thief on the right, Jesus would not have been able to resurrect and resume his providence on earth."
         },
 
         { 
@@ -1586,7 +1586,7 @@ mywd={
         },
 
         { 
-          "a": "God’s existence is not just a matter of words.. He rules over all our senses and over everything to do with us.. because God exists, you must be able to feel His existence with your cells. Reaching that state is what matters."
+          "a": "God s existence is not just a matter of words.. He rules over all our senses and over everything to do with us.. because God exists, you must be able to feel His existence with your cells. Reaching that state is what matters."
         },
 
         { 
@@ -1594,7 +1594,7 @@ mywd={
         },
 
         { 
-          "a": "Make yourself a tuning fork, resonating with and vibrating along God’s frequency. Resonate with God’s unselfishness"
+          "a": "Make yourself a tuning fork, resonating with and vibrating along God s frequency. Resonate with God s unselfishness"
         },
 
         { 
@@ -1614,7 +1614,7 @@ mywd={
         },
 
         { 
-          "a": "Make yourself a tuning fork, resonating with and vibrating along God’s frequency. Resonate with God’s unselfishness."
+          "a": "Make yourself a tuning fork, resonating with and vibrating along God s frequency. Resonate with God s unselfishness."
         },
 
         { 
@@ -1634,11 +1634,11 @@ mywd={
         },
 
         { 
-          "a": "Those who succeed in earthly life by slandering and plotting against others will be turned upside down in the spirit world"
+          "a": "Those who succeed in earthly life by slandering and plotting against others will be turned upside down in the spirit world"
         },
 
         { 
-          "a": "A person who lives intoxicated by God’s love.. can move around in all directions in the spirit world. Since the spirit world is a place where the God’s ideal of love is realized in all directions, people who live enraptured in God’s love stand in a prominent position."
+          "a": "A person who lives intoxicated by God s love.. can move around in all directions in the spirit world. Since the spirit world is a place where the God s ideal of love is realized in all directions, people who live enraptured in God s love stand in a prominent position."
         },
 
         { 
@@ -1678,7 +1678,7 @@ mywd={
         },
 
         { 
-          "a": "What is even more amazing is that the representatives of the five major religions gathered in one place to declare that God is the Parent of humankind, declare that I am the savior and messiah of humanity, affirm that the Unification Principle is a message of peace for human salvation, and affirm that the peaceful unification of the cosmos will be completed through true love and through the \"life lived for the sake of others\" on a level transcending religion, nationality, and race. They further resolved that they would attend the True Parents and harmonize, unite, and devote themselves for the sake of God’s Kingdom and world peace."
+          "a": "What is even more amazing is that the representatives of the five major religions gathered in one place to declare that God is the Parent of humankind, declare that I am the savior and messiah of humanity, affirm that the Unification Principle is a message of peace for human salvation, and affirm that the peaceful unification of the cosmos will be completed through true love and through the \"life lived for the sake of others\" on a level transcending religion, nationality, and race. They further resolved that they would attend the True Parents and harmonize, unite, and devote themselves for the sake of God s Kingdom and world peace."
         },
 
         { 
@@ -1702,7 +1702,7 @@ mywd={
         },
 
         { 
-          "a": "Why do I help the Middle East. Jesus message should have gone to Rome in such a way that brothers would really love their enemies. That is what I’m doing to bring about the restoration. That is why I’m committed to help Islam and Judaism and Christianity to unite and reconcile. Victory came at the Jerusalem Declaration and through this effort True Parents brought victory again on the March for Peace in Israel and Palestine. Now all can become one."
+          "a": "Why do I help the Middle East. Jesus message should have gone to Rome in such a way that brothers would really love their enemies. That is what I m doing to bring about the restoration. That is why I m committed to help Islam and Judaism and Christianity to unite and reconcile. Victory came at the Jerusalem Declaration and through this effort True Parents brought victory again on the March for Peace in Israel and Palestine. Now all can become one."
         },
 
         { 
@@ -1710,7 +1710,7 @@ mywd={
         },
 
         { 
-          "a": "Today, I tell you clearly that God’s strategy and tactic for human salvation is to love your enemy."
+          "a": "Today, I tell you clearly that God s strategy and tactic for human salvation is to love your enemy."
         },
 
         { 
@@ -1726,7 +1726,7 @@ mywd={
         },
 
         { 
-          "a": "You need to understand that alcohol, tobacco, drug abuse and free sex are Satan’s four main weapons."
+          "a": "You need to understand that alcohol, tobacco, drug abuse and free sex are Satan s four main weapons."
         },
 
         { 
@@ -1778,7 +1778,7 @@ mywd={
         },
 
         { 
-          "a": "I have said everything about all ?elds of endeavor, from science and technology to politics, religion, culture, the economy and so forth. Every Word I spoke was brimming with vision. From this perspective, the political, ‘financial and intellectual worlds must have a connection with the future, the world, and the united ideal world. Power structures also must have a way to connect. No matter how  brilliant you may be, if you do not do this, you will perish. Water grows stale if it is not moving. "
+          "a": "I have said everything about all ?elds of endeavor, from science and technology to politics, religion, culture, the economy and so forth. Every Word I spoke was brimming with vision. From this perspective, the political,  financial and intellectual worlds must have a connection with the future, the world, and the united ideal world. Power structures also must have a way to connect. No matter how  brilliant you may be, if you do not do this, you will perish. Water grows stale if it is not moving. "
         },
 
         { 
@@ -1850,7 +1850,7 @@ mywd={
         },
 
         { 
-          "a": "No one in history has ever achieved mind–body unity. Despite the steady progress of God\'s providence of restoration and His determination to save humanity, there has not been a single person who has achieved individual perfection and been liberated from the struggle between the mind and body."
+          "a": "No one in history has ever achieved mind body unity. Despite the steady progress of God\'s providence of restoration and His determination to save humanity, there has not been a single person who has achieved individual perfection and been liberated from the struggle between the mind and body."
         },
 
         { 
@@ -1862,7 +1862,7 @@ mywd={
         },
 
         { 
-          "a": "If you reach the state of mind–body unity, your conscience and physical body will resonate. Buddha\'s saying, \"I am my own lord throughout heaven and earth,\" should be understood in light of this dimension of the world of mind."
+          "a": "If you reach the state of mind body unity, your conscience and physical body will resonate. Buddha\'s saying, \"I am my own lord throughout heaven and earth,\" should be understood in light of this dimension of the world of mind."
         },
 
         { 
@@ -2278,7 +2278,7 @@ mywd={
         },
 
         { 
-          "a": "Consider a ?ower; it is one of the masterpieces of God’s creation. Hidden within a ?ower, even in a nameless wild?ower blooming in a ?eld, we can easily discover the Creator’s Will and purpose. To see a ?ower alive and growing to perfection is truly to witness a miracle."
+          "a": "Consider a ?ower; it is one of the masterpieces of God s creation. Hidden within a ?ower, even in a nameless wild?ower blooming in a ?eld, we can easily discover the Creator s Will and purpose. To see a ?ower alive and growing to perfection is truly to witness a miracle."
         },
 
         { 
@@ -2298,11 +2298,11 @@ mywd={
         },
 
         { 
-          "a": " I know the spirit world more than anybody else and one must understand it clearly. I saw with my eyes that there is heaven and hell."
+          "a": " I know the spirit world more than anybody else and one must understand it clearly. I saw with my eyes that there is heaven and hell."
         },
 
         { 
-          "a": "The flag of the Abel UN must quickly be hoisted. It is a time of transition. If you hesitate you will miss the time. If you miss your chance, the US will not be your only problem. The providence for the entire world will go astray. "
+          "a": "The flag of the Abel UN must quickly be hoisted. It is a time of transition. If you hesitate you will miss the time. If you miss your chance, the US will not be your only problem. The providence for the entire world will go astray. "
         },
 
         { 
@@ -2342,7 +2342,7 @@ mywd={
         },
 
         { 
-          "a": "Focusing all your energy, hold your breath tightly and then release it slowly -- \'phe-e-u-w.’ Doing this over and over will bene?t you many more times than other exercises. There is no exercise better than this. Just 7 to 13 minutes is enough. When you do this, you must hold your breath. Hold it as long as you can. This exercise is for the lungs."
+          "a": "Focusing all your energy, hold your breath tightly and then release it slowly -- \'phe-e-u-w.  Doing this over and over will bene?t you many more times than other exercises. There is no exercise better than this. Just 7 to 13 minutes is enough. When you do this, you must hold your breath. Hold it as long as you can. This exercise is for the lungs."
         },
 
         { 
@@ -2386,7 +2386,7 @@ mywd={
         },
 
         { 
-          "a": "Your original mind is the most important teacher to you. "
+          "a": "Your original mind is the most important teacher to you. "
         },
 
         { 
@@ -2398,7 +2398,7 @@ mywd={
         },
 
         { 
-          "a": "The main attributes of God’s true love are that it is absolute, unique, unchanging and eternal. Whoever practices true love will live with God, share His happiness, and enjoy the right to participate as an equal in His work. Therefore, a life lived for the sake of others, a life of true love, is the absolute precondition for entering the kingdom of heaven."
+          "a": "The main attributes of God s true love are that it is absolute, unique, unchanging and eternal. Whoever practices true love will live with God, share His happiness, and enjoy the right to participate as an equal in His work. Therefore, a life lived for the sake of others, a life of true love, is the absolute precondition for entering the kingdom of heaven."
         },
 
         { 
@@ -2406,7 +2406,7 @@ mywd={
         },
 
         { 
-          "a": "What is the center of the universe? The answer you hear will undoubtedly be, “the parent-child relationship.” Nothing is more important or more precious than the relationship between parent and child. This is because it defines the fundamental relationship between the Creator God and human beings."
+          "a": "What is the center of the universe? The answer you hear will undoubtedly be,  the parent-child relationship.  Nothing is more important or more precious than the relationship between parent and child. This is because it defines the fundamental relationship between the Creator God and human beings."
         },
 
         { 
@@ -2646,7 +2646,7 @@ mywd={
         },
 
         { 
-          "a": "I have nothing. I live in this palace (Cheon Jeong Gung) but I do not consider myself its owner. I am in a position to live in attendance to God. That\'s why I believe that this palace will not collapse even if I am not there. Can you say a person is successful if he builds a palace though he does not have a nation?! I am thinking of leading a more miserable life than what I went through in the past. "
+          "a": "I have nothing. I live in this palace (Cheon Jeong Gung) but I do not consider myself its owner. I am in a position to live in attendance to God. That\'s why I believe that this palace will not collapse even if I am not there. Can you say a person is successful if he builds a palace though he does not have a nation?! I am thinking of leading a more miserable life than what I went through in the past. "
         },
 
         { 
@@ -2886,11 +2886,11 @@ mywd={
         },
 
         { 
-          "a": "Hoon Dok Hae is the key to unifying your mind and body and overcoming all problems on each level. Unifying the mind and body is the center of establishing your family’s stability."
+          "a": "Hoon Dok Hae is the key to unifying your mind and body and overcoming all problems on each level. Unifying the mind and body is the center of establishing your family s stability."
         },
 
         { 
-          "a": "Unifying the mind and body is the center of establishing your family’s stability"
+          "a": "Unifying the mind and body is the center of establishing your family s stability"
         },
 
         { 
@@ -2978,7 +2978,7 @@ mywd={
         },
 
         { 
-          "a": "When I see True Mother, I see the face of God. When I’m near True Mother, I feel the presence of God. We have found in True Parents the way, the truth and the light.   (This is from Archbishop George Augustus Stallings, Jr., Co-Chairman of ACLC, who spoke about the victory of True Parents with \"Peace Starts with Me\" on 12 Nov 2018.)"
+          "a": "When I see True Mother, I see the face of God. When I m near True Mother, I feel the presence of God. We have found in True Parents the way, the truth and the light.   (This is from Archbishop George Augustus Stallings, Jr., Co-Chairman of ACLC, who spoke about the victory of True Parents with \"Peace Starts with Me\" on 12 Nov 2018.)"
         },
 
         { 
@@ -3014,7 +3014,7 @@ mywd={
         },
 
         { 
-          "a": "The central land in the homeland where we can live forever with God, where True Parents\' True Love ideal is assembled, is Jeongju. Jeongju is the land of origin. "
+          "a": "The central land in the homeland where we can live forever with God, where True Parents\' True Love ideal is assembled, is Jeongju. Jeongju is the land of origin. "
         },
 
         { 
@@ -3022,7 +3022,7 @@ mywd={
         },
 
         { 
-          "a": "They think you have to cut off what’s not good, but actually you can cure things through the Happy Health machine in a natural way."
+          "a": "They think you have to cut off what s not good, but actually you can cure things through the Happy Health machine in a natural way."
         },
 
         { 
@@ -3030,7 +3030,7 @@ mywd={
         },
 
         { 
-          "a": "My goal has been to bring about the abolition of borders, starting with the individual. The barriers that prevent the body and mind from becoming one should be eliminated. Nothing can be accomplished if the body and mind are disunited. If husband and wife are disunited, they need to break down the barrier separating them. A quarrelsome family cannot enter the kingdom of heaven. In the next world, they will have to wait. "
+          "a": "My goal has been to bring about the abolition of borders, starting with the individual. The barriers that prevent the body and mind from becoming one should be eliminated. Nothing can be accomplished if the body and mind are disunited. If husband and wife are disunited, they need to break down the barrier separating them. A quarrelsome family cannot enter the kingdom of heaven. In the next world, they will have to wait. "
         },
 
         { 
@@ -3450,7 +3450,7 @@ mywd={
         },
 
         { 
-          "a": "In the near future, whether religious or non­religious, Unification or non­Unification, when people put True Parents\' picture in a prominent place, they know that blessing is coming."
+          "a": "In the near future, whether religious or non religious, Unification or non Unification, when people put True Parents\' picture in a prominent place, they know that blessing is coming."
         },
 
         { 
