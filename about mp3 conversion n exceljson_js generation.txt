@@ -18,6 +18,7 @@ Note: "Any Text to Voice" may have problem speaking words start with 'f' such as
 About "exceljson.js", this file is generated using "D:\wbattest\ExcelColToJson"
 It is advisable to use excel 1000words.xlsx from folder "D:\wbattest\excelColTomp3". 
 
+
 The json file will be named "exceljson.txt"
 Before rename to exceljson.js
 open it using Notepad++
@@ -27,4 +28,11 @@ Enter       [^\x00-\x7F]+
 Replace field is a space.
 If you do not do this, the website will display many question marks inside black diamonds
 
+
+In your index.html, add the following:
+<script type="text/javascript" src="exceljson.js"></script>
+
+In javascripts, how to retrieve the data from  exceljson.js
+The data can be accessed as 
+mywd.Sheet1[n].a            (a means column 'a')
 
