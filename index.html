@@ -49,8 +49,8 @@
     color: #00394d;
     text-shadow: 0.04em 0.03em 1px #B3B3B3;
 }
-                                           	  
-   	                                        
+                                               	  
+         	                                        
 	</style>
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	
@@ -97,6 +97,8 @@
 	
    </head>
   <body>
+  <!--  Bootstrap container declare         -->
+ <div class="container"> 
     <section class="page-header">
       <h1 class="project-name"></h1>
     </section>
@@ -143,8 +145,8 @@ Let the sound of the words inject life to you.
      <!-- fallback content here -->
   </audio>
   <div class="controls" >
-		<button style="font-size: 12px;" class="play" id="play" onclick="playAudioClicked()" data-icon="P" aria-label="play pause toggle">&#9654 Play Random</button>
-		<button style="font-size: 12px;" class="stop" id="stop" onclick="spkPause();"    data-icon="S" aria-label="stop">&#9199</button>
+	 <button style="font-size: 12px;" class="btn btn-primary"  id="play" onclick="playAudioClicked()" data-icon="P" aria-label="play pause toggle">&#9654 Play Random</button>
+	 <button style="font-size: 12px;" class="btn btn-primary"  id="stop" onclick="spkPause();"    data-icon="S" aria-label="stop">&#9199</button>
 
 <!--		<button style="font-size: 12px;" class="rwd" data-icon="B" aria-label="rewind"></button>  -->
 <!--			<button style="font-size: 12px;" class="fwd" data-icon="F" aria-label="fast forward"></button>  -->
@@ -197,6 +199,13 @@ Click (or tap) "Play Pasted" button.
     <input onclick="updateTA();" type='button' value='🔊 Update Textarea' />
 -->	
     </section>
+	
+	
+
+
+ </div> 
+  <!--  End Bootstrap container declare         -->	
+	
   </body>
   
   	<script>
