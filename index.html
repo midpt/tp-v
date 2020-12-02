@@ -65,22 +65,18 @@
 	  //---not used
 	  document.execCommand("defaultParagraphSeparator", false, "br");
 	  $(document).ready(function() {
-	   // document.getElementById("playpasted").style.visibility = "hidden"; 
-		//document.getElementById("spkStop").style.visibility = "hidden"
-		document.getElementById("us").style.visibility = "hidden"
-		document.getElementById("us_").style.visibility = "hidden"
-		document.getElementById("uk").style.visibility = "hidden"
-		document.getElementById("uk_").style.visibility = "hidden"
-		document.getElementById("chinese").style.visibility = "hidden"
-		document.getElementById("chinese_").style.visibility = "hidden"
-		//document.getElementById("japanese").style.visibility = "hidden"
-		//document.getElementById("japanese_").style.visibility = "hidden"
+	//	document.getElementById("us").style.visibility = "hidden"
+	//	document.getElementById("us_").style.visibility = "hidden"
+	//	document.getElementById("uk").style.visibility = "hidden"
+	//	document.getElementById("uk_").style.visibility = "hidden"
+	//	document.getElementById("chinese").style.visibility = "hidden"
+	//	document.getElementById("chinese_").style.visibility = "hidden"
 	        
 	    //----Detect user input into textarea
 		$("#editTA").change(function() {
 		   //alert('Textarea is changed');
 		  // document.getElementById("playpasted").style.visibility = "visible"; 
-		   var sh2=document.getElementById("shw2");
+		  // var sh2=document.getElementById("shw2");
  
 
 		   //sh2.innerHTML="Textarea is changed";
@@ -96,7 +92,7 @@
 
 	</script>
 
-	    
+	          
 	
    </head>
   <body>
@@ -109,9 +105,9 @@
       
 
  <form name="theForm"> 
-  <input type="checkbox" id="us" name="theGroup" onClick="clearGroup(this);"><span id="us_">US </span>
-  <input type="checkbox" id="uk" name="theGroup" onClick="clearGroup(this);"><span id="uk_">UK</span>
-  <input type="checkbox" id="chinese" name="theGroup" onClick="clearGroup(this);"><span id="chinese_"> Chinese</span>
+<!--   <input type="checkbox" id="us" name="theGroup" onClick="clearGroup(this);"><span id="us_">US </span> -->
+<!--   <input type="checkbox" id="uk" name="theGroup" onClick="clearGroup(this);"><span id="uk_">UK</span> -->
+<!--   <input type="checkbox" id="chinese" name="theGroup" onClick="clearGroup(this);"><span id="chinese_"> Chinese</span> -->
 <!--  <input type="checkbox" id="japanese" name="theGroup" onClick="clearGroup(this);"><span id="japanese_">Japanese</span> -->
 
 </form> 
@@ -206,8 +202,8 @@ Click (or tap) "Play Pasted" button.
 	const media = document.querySelector('audio');
 	const controls = document.querySelector('.controls');
 
-	const play = document.querySelector('.play');
-	const stop = document.querySelector('.stop');
+//	const play = document.querySelector('.play');
+//	const stop = document.querySelector('.stop');
 	//const rwd = document.querySelector('.rwd');
 	//const fwd = document.querySelector('.fwd');
 
@@ -245,10 +241,10 @@ Click (or tap) "Play Pasted" button.
 	    //phtotal=mywd.Sheet1.length;
 	     rnum= Math.floor(Math.random() * phtotal);
                          
-		 document.getElementById("us_").style.visibility ="hidden";
-		 document.getElementById("uk_").style.visibility ="hidden";
-		 document.getElementById("chinese_").style.visibility ="hidden";
-		 document.getElementById("editTA").style.visibility ="hidden";
+	//	 document.getElementById("us_").style.visibility ="hidden";
+	//	 document.getElementById("uk_").style.visibility ="hidden";
+	//	 document.getElementById("chinese_").style.visibility ="hidden";
+	//	 document.getElementById("editTA").style.visibility ="hidden";
 
            
 
@@ -297,30 +293,6 @@ Click (or tap) "Play Pasted" button.
 		 //-----Derive available voice list
 	 function availVoiceEnable(){	 
 		// var voicelist = responsiveVoice.getVoices();
-		 var voiceTotal=voicelist.length;
-		 for (n=0;n<voiceTotal;n++){
-		    if (voicelist[n].name.toUpperCase().indexOf("US ") !=-1) {
-			 //  document.getElementById("us_").style.visibility ="visible";
-			 //  document.getElementById("us").style.visibility ="visible";
-			 //  document.getElementById("us").checked = true; //ensure is checked . Default is US voice
-			  // console.log("found us");
-			}
-		    if (voicelist[n].name.toUpperCase().indexOf("UK ") !=-1) {
-			 //  document.getElementById("uk_").style.visibility ="visible";
-			  // document.getElementById("uk").style.visibility ="visible";
-			  // console.log("found uk");
-			}
-		  //  if (voicelist[n].name.toUpperCase().indexOf("JAPANESE ") !=-1) {
-			//   document.getElementById("japanese_").style.visibility ="visible";
-			//   document.getElementById("japanese").style.visibility ="visible";
-			//   console.log("found japanese");
-			//}		 
-		    if (voicelist[n].name.toUpperCase().indexOf("CHINESE ") !=-1) {
-			  // document.getElementById("chinese_").style.visibility ="visible";
-			  // document.getElementById("chinese").style.visibility ="visible";
-			  // console.log("found chinese");
-			}		 
-		}
 		
 		     // document.getElementById("ranloop").style.visibility ="hidden";
 		      var radn= Math.floor(Math.random() * phtotal);
