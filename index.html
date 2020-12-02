@@ -273,7 +273,7 @@
 			  contentId: 'contentArea'
 			});		
                                                           
-			//----function will be used at the in embedSpk()
+			//----function will be used at the in randomSpk()
 	/*		
 			$.fn.scrollDivToElement = function(childSel) {
 			    
@@ -306,7 +306,7 @@
 			  radn_glb=radn;
 			  var mp3index=radn+1;
 			  
-			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
 			  var srcres="mp3/"+mp3index+".mp3";
 			   document.getElementById("audiosource").setAttribute("src", srcres);
 			  
@@ -333,7 +333,7 @@
 		  if (playcnt<2)playcnt ++;
 	      clusterClicked=false;
 		    console.log("inside playAudioClicked(). After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
-           embedSpk();
+           randomSpk();
       } 
   
 	//	var element = document.getElementById('audiosource');
@@ -359,15 +359,15 @@
   	                                   
        //  embed refer to random loop
       function contEmbedSpk(){
-		 console.log("inside contEmbedSpk(). About to call setTimeout embedSpk();");
-	    embedTimeObj=setTimeout(function(){  embedSpk(); }, 2000);
-	     //embedSpk();  
+		 console.log("inside contEmbedSpk(). About to call setTimeout randomSpk();");
+	    embedTimeObj=setTimeout(function(){  randomSpk(); }, 2000);
+	     //randomSpk();  
 
 	  }
-	  function embedSpkEnd() {
+	  function randomSpkEnd() {
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
-			  console.log("inside embedSpkEnd(). About to call contEmbedSpk();");
+			  console.log("inside randomSpkEnd(). About to call contEmbedSpk();");
 
 			  contEmbedSpk();
 			
@@ -395,11 +395,11 @@
 			}
        });	
 	                                                                
-	  function embedSpk(){
+	  function randomSpk(){
 	   //   responsiveVoice.cancel();
 		  curVoice="US English Female";
 		 //phtotal=mywd.Sheet1.length;
-		  console.log("inside embedSpk(). ");
+		  console.log("inside randomSpk(). ");
 
 		  if (pasteTimeObj) {
             clearTimeout(pasteTimeObj);
@@ -434,7 +434,7 @@
 	   	 
 		 //---user click at the 30 chars text box
 		  if (!clusterClicked){
-		      console.log("inside embedSpk().  !clusterClicked");
+		      console.log("inside randomSpk().  !clusterClicked");
 
 			  var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
 			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
@@ -443,7 +443,7 @@
 			  ispaused=false;
 			  var mp3index=radn+1;
 			  
-			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
 			  var srcres="mp3/"+mp3index+".mp3";
 			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   //alert("srcres="+srcres)
@@ -451,7 +451,7 @@
                media.play();			  
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
-		   		console.log("inside embedSpk().  else clusterClicked=true");
+		   		console.log("inside randomSpk().  else clusterClicked=true");
 
                clearTimeout(embedTimeObj); 
 		    
@@ -463,7 +463,7 @@
 			   // responsiveVoice.speak(txt, curVoice); //mobile  onend not working
 			  var mp3index=radn+1;
 			  
-			  //responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
 			  var srcres="mp3/"+mp3index+".mp3";
 			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   //alert("srcres="+srcres)
@@ -479,13 +479,13 @@
 		     
 		//  var txt=mywd.Sheet1[radn].a
 	      //responsiveVoice.speak(txt);
-		  //responsiveVoice.speak(txt, 'UK English Male', {onend: embedSpkEnd});
+		  //responsiveVoice.speak(txt, 'UK English Male', {onend: randomSpkEnd});
           // responsiveVoice.speak(txt, 'UK English Female');//work in mobile
-		  // responsiveVoice.speak(txt, 'UK English Female', {onend: embedSpkEnd});//uk voice with callback mobile not working
-		 // responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
+		  // responsiveVoice.speak(txt, 'UK English Female', {onend: randomSpkEnd});//uk voice with callback mobile not working
+		 // responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
 		        
 	  }	 
-	  //--------end function embedSpk------------------                
+	  //--------end function randomSpk------------------                
  	    
       function spkPause()		{
             // if (responsiveVoice.isPlaying()){
@@ -525,11 +525,11 @@
 		 inx=parseInt(inxs);
 		 console.log("inx="+inx);
 		 clusterClicked=true;
-		 console.log('inside clusterTxtGet(). About to call embedSpk();');
+		 console.log('inside clusterTxtGet(). About to call randomSpk();');
 		// var txt=mywd.Sheet1[inx].a
 		// responsiveVoice.cancel();
-		// responsiveVoice.speak(txt, curVoice, {onend: embedSpkEnd}); //mobile  onend not working
-           embedSpk();
+		// responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
+           randomSpk();
 	  }
 
 	      	         							
