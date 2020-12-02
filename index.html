@@ -516,7 +516,8 @@
 	  }
       //-------------end spkPause()--------------
                                      
-      	       
+
+		 
       function clusterTxtGet(){
 	    var res=event.srcElement.innerHTML;
 	     var pos=res.indexOf(") ");
@@ -533,7 +534,7 @@
 	  }
 
 	        	         							
-                       
+        //---not used               
       function contPasteSpk(){
 	    if (embedTimeObj) {
             clearTimeout(embedTimeObj);
@@ -543,6 +544,8 @@
 	     //pasteSpk();
 	      
 	  }
+
+	     //---not used 
 	  function pasteSpkEnd() {
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
@@ -550,7 +553,7 @@
 			
 		  };
                    	     
-         	         
+          //---not used   	         
 	  function pasteSpk(){
 	    //responsiveVoice.cancel();
 		
@@ -611,7 +614,9 @@
 		// responsiveVoice.speak(txt, curVoice, {onend: pasteSpkEnd});
 	                
 	  }           
-	                     
+
+
+	//-----not used		             
     //----checkboxes checked & unchecked	 
     function clearGroup(elem) {
         var group = document.theForm.theGroup;
