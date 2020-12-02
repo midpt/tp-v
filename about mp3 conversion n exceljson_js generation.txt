@@ -1,15 +1,19 @@
 
 The audio mp3 files are generated using winbatch "Excel2Mp3.wbt"
 
-Excel2Mp3.wbt will automate getting excel 1000words.xlsx from folder "D:\wbattest\excelColTomp3"
+Excel2Mp3.wbt will automate getting excel 1000words.xlsx (do not get it from other places) from folder "D:\wbattest\excelColTomp3"
 
 It will launch "Any Text to Voice". Paste the current Excel row data to its textbox and save the file to a folder chosen by you.  
 Pls select folder 'try100' to save the mp3 file.
 
-After converting a text content to mp3, it will close "Any Text to Voice" and launch it agani.
+After converting a text content to mp3, it will close "Any Text to Voice" and launch it aganin. This is necessary, or else "Any Text to Voice" conversion will be terminated half way.
+
 
 Once all the mp3 have been saved into d:\try100
 You should copy them to  D:\markdown\tp-v\mp3
+
+Note: "Any Text to Voice" may have problem speaking words start with 'f' such as 'flower', 'flexible'.  May have to change 'flower' to 'Flower'
+
 
 About "exceljson.js", this file is generated using "D:\wbattest\ExcelColToJson"
 It is advisable to use excel 1000words.xlsx from folder "D:\wbattest\excelColTomp3". 
@@ -17,10 +21,10 @@ It is advisable to use excel 1000words.xlsx from folder "D:\wbattest\excelColTom
 The json file will be named "exceljson.txt"
 Before rename to exceljson.js
 open it using Notepad++
-Encoding switch to utf-8
+Encoding switch to 'utf-8'
 Select Find.  Check "regular expression"
 Enter       [^\x00-\x7F]+
-Replace with a space.
+Replace field is a space.
 If you do not do this, the website will display many question marks inside black diamonds
 
 
