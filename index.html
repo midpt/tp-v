@@ -404,16 +404,16 @@ Click (or tap) "Play Pasted" button.
 		 if (lastUserVoiceSel.toUpperCase().indexOf("UK ENGLISH") !=-1){
  		      curVoice=lastUserVoiceSel;
 			  //--------check uk--------------  
-				  document.getElementById("us").checked = false; //ensure is checked 
-				  document.getElementById("uk").checked = true; //ensure is unchecked 
-				  document.getElementById("chinese").checked = false; //ensure is unchecked 
+			//	  document.getElementById("us").checked = false; //ensure is checked 
+			//	  document.getElementById("uk").checked = true; //ensure is unchecked 
+			//	  document.getElementById("chinese").checked = false; //ensure is unchecked 
 				 // document.getElementById("japanese").checked = false; //ensure is unchecked 
 		  }else{
 		          curVoice="US English Female";
 			  //--------check us--------------  
-				  document.getElementById("us").checked = true; //ensure is checked 
-				  document.getElementById("uk").checked = false; //ensure is unchecked 
-				  document.getElementById("chinese").checked = false; //ensure is unchecked 
+				//  document.getElementById("us").checked = true; //ensure is checked 
+				//  document.getElementById("uk").checked = false; //ensure is unchecked 
+				//  document.getElementById("chinese").checked = false; //ensure is unchecked 
 				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 
 		 }		  
@@ -557,26 +557,26 @@ Click (or tap) "Play Pasted" button.
 		 
 		 //---update the last selected checked Voice
 		 if (lastUserVoiceSel !=""){
- 		   curVoice=lastUserVoiceSel;
+ 		  // curVoice=lastUserVoiceSel;
 			  //--------check only US--------------  
 			  if (lastUserVoiceSel.toUpperCase().indexOf("US ENGLISH") !=-1){
-				  document.getElementById("us").checked = true; //ensure is checked 
-				  document.getElementById("uk").checked = false; //ensure is unchecked 
-				  document.getElementById("chinese").checked = false; //ensure is unchecked 
+				//  document.getElementById("us").checked = true; //ensure is checked 
+				//  document.getElementById("uk").checked = false; //ensure is unchecked 
+				//  document.getElementById("chinese").checked = false; //ensure is unchecked 
 				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	  
 			  //--------check only UK--------------  
 			  if (lastUserVoiceSel.toUpperCase().indexOf("UK ENGLISH") !=-1){
-				  document.getElementById("us").checked = false; //ensure is checked 
-				  document.getElementById("uk").checked = true; //ensure is unchecked 
-				  document.getElementById("chinese").checked = false; //ensure is unchecked 
+				 // document.getElementById("us").checked = false; //ensure is checked 
+				 // document.getElementById("uk").checked = true; //ensure is unchecked 
+				 // document.getElementById("chinese").checked = false; //ensure is unchecked 
 				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	  
 			  //--------check only chinese--------------  
 			  if (lastUserVoiceSel.toUpperCase().indexOf("CHINESE") !=-1){
-				  document.getElementById("us").checked = false; //ensure is checked 
-				  document.getElementById("uk").checked = false; //ensure is unchecked 
-				  document.getElementById("chinese").checked = true; //ensure is unchecked 
+				//  document.getElementById("us").checked = false; //ensure is checked 
+				//  document.getElementById("uk").checked = false; //ensure is unchecked 
+				//  document.getElementById("chinese").checked = true; //ensure is unchecked 
 				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
 			  }	 		 
 			  //--------check only japanese--------------  
@@ -659,7 +659,7 @@ Click (or tap) "Play Pasted" button.
 	//	 document.getElementById("chinese_").style.visibility ="hidden";
 	//	 document.getElementById("editTA").style.visibility ="hidden";
 
-  	          
+        	            
 	
 	</script>
   
