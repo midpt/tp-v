@@ -358,7 +358,7 @@
         },
 
         { 
-          "a": "Absoluteness must be unique, unchanging and eternal... There must be such qualitie. [God is] absolutely unique, absolutely unchanging and absolutely eternal. "
+          "a": "Absoluteness must be unique, unchanging and eternal... There must be such qualities. [God is] absolutely unique, absolutely unchanging and absolutely eternal. "
         },
 
         { 
