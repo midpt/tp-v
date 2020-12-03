@@ -390,14 +390,24 @@
 	   	 
 		 //---user click at the 30 chars text box
 		  if (!clusterClicked){
-		      console.log("inside randomSpk().  !clusterClicked");
+		      console.log("inside randomSpk().  !clusterClicked  phtotal="+phtotal);
 
-			  var radn= Math.floor(Math.random() * phtotal);     // if is 10, returns a random integer from 0 to 9 
-			  e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
+			  var radn= Math.floor(Math.random() * phtotal);     // if is phtotal=10, returns a random integer from 0 to 9 
+			 ispaused=false;
+			  var mp3index;
+			  if (radn+1<1001)
+				{
+					mp3index=radn+1;;	
+				}else{
+					radn=999;
+					mp3index=1000;
+
+				}
+
+			e1.innerHTML =radn+")  "+mywd.Sheet1[radn].a;
 			  var scrollAmt=(40)*radn
 			  var txt=mywd.Sheet1[radn].a
-			  ispaused=false;
-			  var mp3index=radn+1;
+
 			  
 			  //-------change the mp3 file in Audio element
 			  var srcres="mp3/"+mp3index+".mp3";
@@ -420,7 +430,13 @@
 			   var txt=mywd.Sheet1[radn].a
 			   ispaused=false;
 			   // responsiveVoice.speak(txt, curVoice); //mobile  onend not working
-			  var mp3index=radn+1;
+			  var mp3index;
+			  if (radn+1<1001)
+				{
+					mp3index=radn+1;;	
+				}else{
+					mp3index=1;
+				}
 			  
 			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
 			  var srcres="mp3/"+mp3index+".mp3";
