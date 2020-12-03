@@ -294,16 +294,19 @@
 			  var mp3index=radn+1;
 			  
 			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
+
 			  var srcres="mp3/"+mp3index+".mp3";
-			   document.getElementById("audiosource").setAttribute("src", srcres);
+			  document.getElementById("audiosource").setAttribute("src", srcres);
 			  
 		   	  
 		   	    
 
 	  }
        //-------------end availVoiceEnable()-----	
-
-      setTimeout(function(){ availVoiceEnable(); }, 500); //original set to 2000
+       
+	  //----When first run
+	  //---Set up the mp3 file for HTML5 Audio element---
+	  setTimeout(function(){ availVoiceEnable(); }, 500); //original set to 2000
 	           
  	                                         	      
 	  function MMenu()	 {
@@ -313,44 +316,28 @@
 	  //---detect user click the Play Random button
 	  function playAudioClicked(){
 	       audioPlayBtnClicked=true;
-		    console.log("inside playAudioClicked().  ");
+		   console.log("inside playAudioClicked().  ");
 		   
           if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
 		  if (playcnt<2)playcnt ++;
 	      clusterClicked=false;
-		    console.log("inside playAudioClicked(). After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
-           randomSpk();
+		  console.log("inside playAudioClicked(). After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
+          randomSpk();
       } 
   
-	//	var element = document.getElementById('audiosource');
-	//	element.addEventListener("click", function(e) {
-			
-	//	    console.log("Detected audiosource Play clicked   playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
-     //     if (playcnt==0) e1.innerHTML =radn_glb+")  "+mywd.Sheet1[radn_glb].a; //display the corresponding text for audio
-	//	  if (playcnt<2)playcnt ++;
-	  //    clusterClicked=false;
-	//	    console.log("Detected audiosource Play clicked . After setting  clusterClicked to false.  playcnt="+playcnt+"  clusterClicked="+ clusterClicked);
-  			  
-	      		
-		//}, false);
-
-//	if (window.addEventListener){
-//		(function(){
-	//		function playfunc(){
-//			    console.log('window event play detected.');
-//			}
-//			document.getElementById('audiosource').addEventListener('play', playfunc, false);
-//		})();
-//	}	                              
+                            
   	                                   
        //  embed refer to random loop
       function contEmbedSpk(){
 		 console.log("inside contEmbedSpk(). About to call setTimeout randomSpk();");
+			//-------change the mp3 file in Audio element
+		document.getElementById("audiosource").setAttribute("src", srcres);
+		var srcres="mp3/"+mp3index+".mp3";
+		console.log("radn="+radn+"  mp3index="+mp3index); 
+			  
 	    embedTimeObj=setTimeout(function(){  randomSpk(); }, 2000);
-	     //randomSpk();  
+	     //randomSpk();   } function randomSpkEnd() {
 
-	  }
-	  function randomSpkEnd() {
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
 			  console.log("inside randomSpkEnd(). About to call contEmbedSpk();");
@@ -383,35 +370,18 @@
 	                                                                
 	  function randomSpk(){
 	   //   responsiveVoice.cancel();
-		  curVoice="US English Female";
+		  
 		 //phtotal=mywd.Sheet1.length;
 		  console.log("inside randomSpk(). ");
 
+          //---not used
 		  if (pasteTimeObj) {
             clearTimeout(pasteTimeObj);
             pasteTimeObj = 0;
 			
           }
-		  //--------check only US, if last checked is not UK--------------  
-		 //---update the last selected checked Voice
-		 if (lastUserVoiceSel.toUpperCase().indexOf("UK ENGLISH") !=-1){
- 		      curVoice=lastUserVoiceSel;
-			  //--------check uk--------------  
-			//	  document.getElementById("us").checked = false; //ensure is checked 
-			//	  document.getElementById("uk").checked = true; //ensure is unchecked 
-			//	  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				 // document.getElementById("japanese").checked = false; //ensure is unchecked 
-		  }else{
-		          curVoice="US English Female";
-			  //--------check us--------------  
-				//  document.getElementById("us").checked = true; //ensure is checked 
-				//  document.getElementById("uk").checked = false; //ensure is unchecked 
-				//  document.getElementById("chinese").checked = false; //ensure is unchecked 
-				//  document.getElementById("japanese").checked = false; //ensure is unchecked 
-
-		 }		  
-	     	  
-                                                                                                                                                                                                            
+     	  
+                                                                                                                                                                                                              
 	      	    
 		 // document.getElementById("spkStop").style.visibility = "visible";
 
@@ -429,11 +399,11 @@
 			  ispaused=false;
 			  var mp3index=radn+1;
 			  
-			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
-			  var srcres="mp3/"+mp3index+".mp3";
-			   document.getElementById("audiosource").setAttribute("src", srcres);
-			   //alert("srcres="+srcres)
-			   console.log("radn="+radn+"  mp3index="+mp3index);
+			  //-------change the mp3 file in Audio element
+			 // var srcres="mp3/"+mp3index+".mp3";
+			  // document.getElementById("audiosource").setAttribute("src", srcres);
+			   
+			  // console.log("radn="+radn+"  mp3index="+mp3index);
                media.play();			  
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
