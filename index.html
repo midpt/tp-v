@@ -330,12 +330,12 @@
        //  embed refer to random loop
       function contEmbedSpk(){
 		 console.log("inside contEmbedSpk(). About to call setTimeout randomSpk();");
-			//-------change the mp3 file in Audio element
-		document.getElementById("audiosource").setAttribute("src", srcres);
-		var srcres="mp3/"+mp3index+".mp3";
-		console.log("radn="+radn+"  mp3index="+mp3index); 
+		//-------change the mp3 file in Audio element
+		//document.getElementById("audiosource").setAttribute("src", srcres);
+		//var srcres="mp3/"+mp3index+".mp3";
+		//console.log("radn="+radn+"  mp3index="+mp3index); 
 			  
-	    embedTimeObj=setTimeout(function(){  randomSpk(); }, 2000);
+	    embedTimeObj=setTimeout(function(){  randomSpk(); }, 1000);
 	     //randomSpk();   } function randomSpkEnd() {
 
 			//$("#log").text('fnished playing');
@@ -350,7 +350,7 @@
         {  
 		  media.currentTime = 0;
            if (clusterClicked==false){
-		     contEmbedSpk();
+		      contEmbedSpk();
 			  console.log("media.addEventListener ended.   clusterClicked==false");
 			 }else{
 			  console.log("media.addEventListener ended.   clusterClicked==true");
@@ -381,7 +381,7 @@
 			
           }
      	  
-                                                                                                                                                                                                                  
+                                                                                                                                                                                                                    
 	      	    
 		 // document.getElementById("spkStop").style.visibility = "visible";
 
@@ -400,11 +400,14 @@
 			  var mp3index=radn+1;
 			  
 			  //-------change the mp3 file in Audio element
-			 // var srcres="mp3/"+mp3index+".mp3";
-			  // document.getElementById("audiosource").setAttribute("src", srcres);
+			  var srcres="mp3/"+mp3index+".mp3";
+			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   
-			  // console.log("radn="+radn+"  mp3index="+mp3index);
-               media.play();			  
+			   console.log("radn="+radn+"  mp3index="+mp3index);
+
+			   embedTimeObj=setTimeout(function(){  media.play(); }, 1000);
+
+               //media.play();			  
 		  			  
            } else{ // user clicked from the list. Speak the line user clicked
 		   		console.log("inside randomSpk().  else clusterClicked=true");
