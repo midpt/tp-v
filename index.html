@@ -340,7 +340,7 @@
 
 			//$("#log").text('fnished playing');
 			//alert('finished playing');
-			  console.log("inside randomSpkEnd(). About to call contEmbedSpk();");
+			 // console.log("inside randomSpkEnd(). About to call contEmbedSpk();");
 
 			 // contEmbedSpk();
 			
@@ -427,7 +427,8 @@
 			   document.getElementById("audiosource").setAttribute("src", srcres);
 			   //alert("srcres="+srcres)
 			   console.log("radn="+radn+"  mp3index="+mp3index);
-               media.play();			   
+			   embedTimeObj=setTimeout(function(){  media.play(); }, 1000);
+               //media.play();			   
 	             	         	         
 			}	               	   
 		  //document.getElementById('scrollArea').scrollTop = scrollAmt;
