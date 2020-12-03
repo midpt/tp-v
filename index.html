@@ -290,8 +290,19 @@
 		
 		     // document.getElementById("ranloop").style.visibility ="hidden";
 		      var radn= Math.floor(Math.random() * phtotal);
-			  radn_glb=radn;
-			  var mp3index=radn+1;
+			  
+			  var mp3index;
+			  //---note: phtotal should be 1000, but due to Excel has 1001 rows of data, phtotal=1001, so radn can be 1000 
+			  //   but mp3 has only up to 1000.mp3, so when radn=1000, we have to ensure that it is 999, so 999+1=1000.mp3
+			  if (radn+1<1001)
+				{
+					mp3index=radn+1;;	
+				}else{
+					radn=999;
+					mp3index=1000;
+
+				}
+				radn_glb=radn;
 			  
 			  //responsiveVoice.speak(txt, curVoice, {onend: randomSpkEnd}); //mobile  onend not working
 
@@ -308,7 +319,7 @@
 	  //---Set up the mp3 file for HTML5 Audio element---
 	  setTimeout(function(){ availVoiceEnable(); }, 500); //original set to 2000
 	           
- 	                                         	      
+ 	                                           	      
 	  function MMenu()	 {
 	  
 	  }
@@ -392,9 +403,12 @@
 		  if (!clusterClicked){
 		      console.log("inside randomSpk().  !clusterClicked  phtotal="+phtotal);
 
+              //---note: phtotal should be 1000, but due to Excel has 1001 rows of data, phtotal=1001  
 			  var radn= Math.floor(Math.random() * phtotal);     // if is phtotal=10, returns a random integer from 0 to 9 
 			 ispaused=false;
 			  var mp3index;
+			  //---note: phtotal should be 1000, but due to Excel has 1001 rows of data, phtotal=1001, so radn can be 1000 
+			  //   but mp3 has only up to 1000.mp3, so when radn=1000, we have to ensure that it is 999, so 999+1=1000.mp3
 			  if (radn+1<1001)
 				{
 					mp3index=radn+1;;	
