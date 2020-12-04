@@ -13,7 +13,24 @@
 	.scrollable-item {
 		font-size: 20px;
 		padding: 10px;
-	}		
+	}	
+
+/* desktop screen   */
+@media screen and (min-width: 601px) {
+  p.shw1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile screen */
+@media screen and (max-width: 600px) {
+	p.shw1 {
+    font-size: 16px;
+  }
+}
+
+
+
 	.shw1{
 	      border: 1px solid black;
 		  padding: 10px;
@@ -26,7 +43,9 @@
           /*   font-size:1.3em;   */
           /*  using vw unit to enable text size responsiveness     */
           /*  1 vw is about 1% of whole view. A 100cm view port gives 10cm font size     */
-  		  font-size: 1.9vw;   
+		  /* However in Desktop size too big. In mobile size too small   */
+  		 /*  font-size: 1.9vw;    */
+		  
 
 		  background: url(images/a.jpg);
 		  background-size: cover;
